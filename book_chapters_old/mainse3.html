@@ -1,0 +1,298 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Vectors</title> 
+<meta charset='UTF-8' /> 
+<meta content='TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)' name='generator' /> 
+<link href='main.css' rel='stylesheet' type='text/css' /> 
+<!--  for beautifying  --><link href='site.css' rel='stylesheet' type='text/css' /> 
+<script type='text/x-mathjax-config'> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script> <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script> 
+</head><body>
+<!-- l. 1915 --><div class='crosslinks'><p class='noindent'>[<a href='mainse4.html'>next</a>] [<a href='mainse2.html'>prev</a>] [<a href='mainse2.html#tailmainse2.html'>prev-tail</a>] [<a href='#tailmainse3.html'>tail</a>] [<a href='mainch2.html#mainse3.html'>up</a>] </p></div>
+<h3 class='sectionHead' id='vectors'><span class='titlemark'>2.3   </span> <a id='x6-510002.3'></a>Vectors</h3>
+<p>Vectors are groups of numbers which, when named “vectors”, have both a magnitude and direction. The magnitude of
+the vector corresponds to the length of the vector. The direction of the vector must be relative to a given
+coordinate system. Within mathematics, vectors are described using a <em><span class='cmti-10'>linearly independent basis</span></em>. A basis is a set of
+<!-- l. 1917 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+vectors within a coordinate system. All other vectors can be build using combinations of these
+<!-- l. 1917 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+vectors. The term linearly independent signifies that none of the basis vectors are made up of other basis
+vectors. The general term used to describe these possible combinations of vectors using a basis is called <em><span class='cmti-10'>vector
+space</span></em>. It is possible to have a vector space build up of any positive amount of basis vectors. However, since we
+exist in 3 dimensions, in engineering applications we typically operate in a vector space composed of 3 basis
+vectors. Mathematically, we could say we operate in a vector space of 3. These 3 basis vectors are named
+<!-- l. 1917 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>î</mi></math>,
+<!-- l. 1917 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ĵ</mi></math>, and
+<!-- l. 1917 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></math> and are
+shown in equations <a href='#x6-51001r190'>2.190<!-- tex4ht:ref: hat_i  --></a>, <a href='#x6-51002r191'>2.191<!-- tex4ht:ref: hat_j  --></a>, and <a href='#x6-51003r192'>2.192<!-- tex4ht:ref: hat_k  --></a> respectively. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 1922 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                            <mtr><mtd class='align-odd' columnalign='right'><mi>î</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>⟨</mo><mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>⟩</mo></mtd>                                            <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                            <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-51001r190'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.190)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 1928 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mi>ĵ</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>⟨</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>⟩</mo></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-51002r191'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.191)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 1934 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>⟨</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>⟩</mo></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-51003r192'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.192)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>A vector <!-- l. 1937 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math> operating in the
+the vector space build on the <!-- l. 1937 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>î</mi></math>,
+<!-- l. 1937 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ĵ</mi></math>, and
+<!-- l. 1937 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></math> vectors
+would take on the following format shown in equation <a href='#x6-51004r193'>2.193<!-- tex4ht:ref: basis_vector_aa  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 1942 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                        <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></mtd>                                        <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                        <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-51004r193'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.193)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>As mentioned previously, the magnitude of a vector is the length of the vector. Using geometry, we can calculate the magnitude of
+vector <!-- l. 1945 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math>
+shown in equation <a href='#x6-51004r193'>2.193<!-- tex4ht:ref: basis_vector_aa  --></a> using the following equation (the symbol for magnitude is
+<!-- l. 1945 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>a</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>).
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 1950 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                       <mtr><mtd class='align-odd' columnalign='right'><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>a</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msqrt><mrow><msubsup><mrow><mi>a</mi></mrow><mrow><mn>1</mn> </mrow> <mrow>  <mn>2</mn> </mrow> </msubsup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msubsup><mrow><mi>a</mi></mrow><mrow><mn>2</mn> </mrow> <mrow>  <mn>2</mn> </mrow> </msubsup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msubsup><mrow><mi>a</mi></mrow><mrow><mn>3</mn> </mrow> <mrow>  <mn>2</mn></mrow></msubsup></mrow></msqrt></mtd>                                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                       <mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+</div>
+<p>A <em><span class='cmti-10'>unit vector</span></em> is a vector of magnitude 1. Any vector can be converted to a unit vector by dividing all its components
+(<!-- l. 1953 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+<!-- l. 1953 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub></math>,
+<!-- l. 1953 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub></math>) by its
+magnitude (<!-- l. 1953 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>a</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>).
+<br class='newline' />
+</p> 
+<p>In this book, we will cover two vector operations: the dot product and the cross product.
+
+</p> 
+
+<h4 class='subsectionHead' id='vector-addition-and-subtraction'><span class='titlemark'>2.3.1   </span> <a id='x6-520002.3.1'></a>Vector addition and subtraction</h4>
+<p>To add two vectors, we simply add each component as shown in equation <a href='#x6-52001r194'>2.194<!-- tex4ht:ref: vector_add_eqn  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 1964 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                              <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>+</mo> <mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></mtd>                              <mtd class='align-even'><mspace width='2em'></mspace></mtd>                              <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-52001r194'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.194)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Similarly, to subtract vectors, we simply subtract each component as shown in equation <a href='#x6-52002r195'>2.195<!-- tex4ht:ref: vector_sub_eqn  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 1972 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                              <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>−</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></mtd>                              <mtd class='align-even'><mspace width='2em'></mspace></mtd>                              <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-52002r195'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.195)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+
+<h4 class='subsectionHead' id='the-dot-product'><span class='titlemark'>2.3.2   </span> <a id='x6-530002.3.2'></a>The Dot Product</h4>
+<p>The dot product is a vector operation that can be performed on two vectors which exist in any
+<!-- l. 1977 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+value vector space. In vector space 3, the dot product is defined as equation <a href='#x6-53001r196'>2.196<!-- tex4ht:ref: dot_product_def  --></a> for vectors
+<!-- l. 1977 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math> and
+<!-- l. 1977 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover></math>.
+<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 1982 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                   <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>⋅</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub></mtd>                                   <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                   <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-53001r196'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.196)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Equation <a href='#x6-53001r196'>2.196<!-- tex4ht:ref: dot_product_def  --></a> can be extrapolated to the perform the dot product on vectors which exist in a different vector space.
+<br class='newline' />
+</p> 
+<p>An alternative equation for calculating the dot product is shown in equation <a href='#x6-53002r197'>2.197<!-- tex4ht:ref: dot_product_def_geom  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 1992 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                      <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>⋅</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>a</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-bin' stretchy='false'>∗</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>b</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-bin' stretchy='false'>∗</mo><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>𝜃</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                      <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                      <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-53002r197'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.197)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>In equation <a href='#x6-53002r197'>2.197<!-- tex4ht:ref: dot_product_def_geom  --></a>, <!-- l. 1995 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math> is
+the angle between <!-- l. 1995 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math>
+and <!-- l. 1995 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover></math>.<br class='newline' />
+</p> 
+<p><em><span class='cmti-10'>Orthogonal Vectors</span></em> are defined as vectors with a dot product of 0. <br class='newline' />
+
+                                                                                                
+                                                                                                
+</p> 
+
+<h4 class='subsectionHead' id='the-cross-product'><span class='titlemark'>2.3.3   </span> <a id='x6-540002.3.3'></a>The Cross Product</h4>
+<p>The cross product is a vector operation that can be performed on two vectors which exist in a vector space of 3 or more. However,
+in this book we will focus only on the cross product in vector space 3. In this situation, the cross product is defined as equation
+<a href='#x6-54001r198'>2.198<!-- tex4ht:ref: cross_product_def  --></a> for <!-- l. 2001 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math>
+and <!-- l. 2001 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover></math>.
+<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2006 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                    <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>a</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-bin' stretchy='false'>∗</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mi>b</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-bin' stretchy='false'>∗</mo> <mi mathvariant='italic'>𝑠𝑖𝑛</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>𝜃</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mover accent='true'><mrow><mi>n</mi></mrow><mo accent='true'>→</mo></mover></mtd>                                    <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                    <mtd class='align-label' columnalign='right'><mstyle class='label' id='x6-54001r198'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.198)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p><!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>n</mi></mrow><mo accent='true'>→</mo></mover></math> is defined as a unit vector
+which is perpendicular to both <!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math>
+and <!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover></math>.
+<!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math> is the angle
+between <!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover></math>
+and <!-- l. 2009 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover></math>.<br class='newline' />
+</p> 
+<p>We can use equation <a href='#x6-54001r198'>2.198<!-- tex4ht:ref: cross_product_def  --></a> to state the following for our vector space 3 basis vectors (equations equations <a href='#x6-51001r190'>2.190<!-- tex4ht:ref: hat_i  --></a>, <a href='#x6-51002r191'>2.191<!-- tex4ht:ref: hat_j  --></a>, and
+<a href='#x6-51003r192'>2.192<!-- tex4ht:ref: hat_k  --></a>) introduced earlier. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 2014 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x6-54002r199'></mstyle><!-- endlabel --><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>×</mo><mi>ĵ</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover>
+</mrow></math></td><td class='eq-no'>(2.199)</td></tr></table>
+<p></p> 
+</div>
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2020 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x6-54003r200'></mstyle><!-- endlabel --><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>î</mi>
+</mrow></math></td><td class='eq-no'>(2.200)</td></tr></table>
+<p></p> 
+</div>
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2026 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x6-54004r201'></mstyle><!-- endlabel --><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo><mi>î</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>ĵ</mi>
+</mrow></math></td><td class='eq-no'>(2.201)</td></tr></table>
+<p></p> 
+</div>
+<p>Please note that in equations <a href='#x6-54002r199'>2.199<!-- tex4ht:ref: vec_1  --></a>, <a href='#x6-54003r200'>2.200<!-- tex4ht:ref: vece  --></a> and <a href='#x6-54004r201'>2.201<!-- tex4ht:ref: vect  --></a>, a angle convention was introduced (for example, the
+<!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math> between
+<!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>î</mi></math> and
+<!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ĵ</mi></math> is defined to be positive
+- this implies that the <!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math>
+between <!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ĵ</mi></math>
+                                                                                                
+                                                                                                
+and <!-- l. 2031 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>î</mi></math> is
+negative).<br class='newline' />
+</p> 
+<p>Our goal now is to find a general expression for the cross product of vector space 3 vectors
+<!-- l. 2033 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi></math> and
+<!-- l. 2033 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>b</mi></math>. This
+problem statement is presented mathematically as follows. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2038 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                 <mtr><mtd class='align-odd' columnalign='right'><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>×</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                 <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                 <mtd class='align-label' columnalign='right'>
+                                 </mtd></mtr><mtr><mtd class='align-odd' columnalign='right'></mtd>                                                                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                 <mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+</div>
+<p>Distributing, we get the following equation. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2047 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+            <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover><mo class='MathClass-close' stretchy='false'>)</mo></mtd>            <mtd class='align-even'><mspace width='2em'></mspace></mtd>            <mtd class='align-label' columnalign='right'>
+            </mtd></mtr><mtr><mtd class='align-odd' columnalign='right'> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>î</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>ĵ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo> <msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                                             <mtd class='align-even'><mspace width='2em'></mspace></mtd>            <mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+</div>
+                                                                                                
+                                                                                                
+<p>We know that any unit vector crossed with itself is 0, therefore,
+<!-- l. 2050 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>×</mo><mi>î</mi></mrow></math>,
+<!-- l. 2050 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo><mi>ĵ</mi></mrow></math>,
+<!-- l. 2050 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></mrow></math> terms
+are eliminated. Simplifying and replacing the cross products with identities provided in equations <a href='#x6-54002r199'>2.199<!-- tex4ht:ref: vec_1  --></a>, <a href='#x6-54003r200'>2.200<!-- tex4ht:ref: vece  --></a>, and <a href='#x6-54004r201'>2.201<!-- tex4ht:ref: vect  --></a>, we
+can simplify to get the following.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2055 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+                         <mtr><mtd class='align-odd' columnalign='right'><mover accent='true'><mrow><mi>a</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-bin' stretchy='false'>×</mo><mover accent='true'><mrow><mi>b</mi></mrow><mo accent='true'>→</mo></mover> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>î</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>3</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>ĵ</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>a</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>b</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mover accent='true'><mrow><mi>k</mi></mrow><mo accent='true'>^</mo></mover></mtd>                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                         <mtd class='align-label' columnalign='right'>
+                         </mtd></mtr><mtr><mtd class='align-odd' columnalign='right'></mtd>                                                                              <mtd class='align-even'><mspace width='2em'></mspace></mtd>                         <mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+</div>
+                                                                                                
+                                                                                                
+<!-- l. 2058 --><div class='crosslinks'><p class='noindent'>[<a href='mainse4.html'>next</a>] [<a href='mainse2.html'>prev</a>] [<a href='mainse2.html#tailmainse2.html'>prev-tail</a>] [<a href='mainse3.html'>front</a>] [<a href='mainch2.html#mainse3.html'>up</a>] </p></div>
+<p><a id='tailmainse3.html'></a> </p> 
+ 
+</body> 
+</html>

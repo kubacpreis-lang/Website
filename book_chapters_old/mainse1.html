@@ -1,0 +1,1257 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Calculus Fundamentals</title> 
+<meta charset='UTF-8' /> 
+<meta content='TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)' name='generator' /> 
+<link href='main.css' rel='stylesheet' type='text/css' /> 
+<!--  for beautifying  --><link href='site.css' rel='stylesheet' type='text/css' /> 
+<script type='text/x-mathjax-config'> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script> <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script> 
+</head><body>
+<!-- l. 40 --><div class='crosslinks'><p class='noindent'>[<a href='mainse2.html'>next</a>] [<a href='#tailmainse1.html'>tail</a>] [<a href='mainch2.html#mainse1.html'>up</a>] </p></div>
+<h3 class='sectionHead' id='calculus-fundamentals'><span class='titlemark'>2.1   </span> <a id='x4-30002.1'></a>Calculus Fundamentals</h3>
+<p>Calculus is defined as the branch of mathematics that utilizes infinitesimally small quantities to study continuous change.
+The two main topics within calculus are the <em><span class='cmti-10'>derivative</span></em> and the <em><span class='cmti-10'>integral</span></em>. <br class='newline' />
+
+</p> 
+
+<h4 class='subsectionHead' id='the-derivative'><span class='titlemark'>2.1.1   </span> <a id='x4-40002.1.1'></a>The Derivative</h4>
+<p>In order to understand the derivative, we will start with a two variables
+(<!-- l. 46 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi></mrow></math>). These
+variables are related to each other by the function presented in equation <a href='#x4-4001r1'>2.1<!-- tex4ht:ref: derivative_first_func  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 51 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                             <mtr><mtd class='align-odd' columnalign='right'><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                             <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                             <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-4001r1'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.1)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Our goal is to find how much <!-- l. 54 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+varies per increment of <!-- l. 54 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>. This
+”quantity of change per unit <!-- l. 54 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>”
+is symbolized by the variable <!-- l. 54 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>.
+In order to do this, we can start out with equation <a href='#x4-4002r2'>2.2<!-- tex4ht:ref: derivative_second  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 59 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mi>C</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><msub><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow> 
+<mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfrac></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-4002r2'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.2)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Equation <a href='#x4-4002r2'>2.2<!-- tex4ht:ref: derivative_second  --></a> will tell us how much <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+changes from <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></math> to
+<!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub></math>. However, we are interested in the
+amount <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math> is changed <em><span class='cmti-10'>instantaneously</span></em>.
+Therefore, we can say that <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi></mrow></math>
+where <!-- l. 62 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>h</mi></math> is
+an infinitesimally small quantity. Plugging this into equation <a href='#x4-4002r2'>2.2<!-- tex4ht:ref: derivative_second  --></a> we get equation <a href='#x4-4003r3'>2.3<!-- tex4ht:ref: derivative_third  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 67 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                       <mtr><mtd class='align-odd' columnalign='right'><mi>C</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder>     <mfrac><mrow><msub><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow> 
+<mrow><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfrac></mtd>                                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                       <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-4003r3'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.3)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Simplifying the denominator of equation <a href='#x4-4003r3'>2.3<!-- tex4ht:ref: derivative_third  --></a> and plugging in equation <a href='#x4-4001r1'>2.1<!-- tex4ht:ref: derivative_first_func  --></a> we get equation <a href='#x4-4004r4'>2.4<!-- tex4ht:ref: derivative_fourth  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 75 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                      <mtr><mtd class='align-odd' columnalign='right'><mi>C</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+          <mrow><mi>h</mi></mrow></mfrac>        </mtd>                                      <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                      <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-4004r4'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.4)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Please note that since we are now dealing with one value of
+<!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>, we replaced
+<!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></math> with
+<!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>. The above equation can be used
+to find the instantaneous change in <!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+per infinitesimally small interval <!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>
+for any value <!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>.
+Typically, we replace <!-- l. 78 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
+with the following notation.
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 83 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                     <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>𝑑𝑦</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+          <mrow><mi>h</mi></mrow></mfrac>        </mtd>                                     <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                     <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-4005r5'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.5)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The <!-- l. 86 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi mathvariant='italic'>𝑑𝑦</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac></math> symbolizes ”The change
+in <!-- l. 86 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math> per a infinitesimally
+small interval <!-- l. 86 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>”.
+
+</p> 
+
+<h5 class='subsubsectionHead' id='short-example'><a id='x4-5000'></a>Short Example</h5>
+<p><a id='x4-5000doc'></a>
+</p><p>Let us start with the function shown in equation <a href='#x4-5001r6'>2.6<!-- tex4ht:ref: eqn_short_ex_der  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 95 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                              <mtr><mtd class='align-odd' columnalign='right'><mi>p</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup></mtd>                                              <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                              <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-5001r6'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.6)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>For the purpose of this example, let us assume that <!-- l. 98 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>p</mi></math>
+is the position of a particle at any time <!-- l. 98 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>t</mi></math>. We
+want to find the instantaneous change in <!-- l. 98 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>p</mi></math>
+per interval <!-- l. 98 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>t</mi></math>.
+You may notice that this is position divided by time ... we are calculating speed. Plugging equation <a href='#x4-5001r6'>2.6<!-- tex4ht:ref: eqn_short_ex_der  --></a> into equation <a href='#x4-4005r5'>2.5<!-- tex4ht:ref: derivativedef  --></a> we
+get equation <a href='#x4-5002r7'>2.7<!-- tex4ht:ref: eqn_example_two  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 103 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                       <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>𝑑𝑝</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑡</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>t</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow> 
+         <mrow><mi>h</mi></mrow></mfrac>      </mtd>                                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                       <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-5002r7'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.7)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Solving the limit in equation <a href='#x4-5002r7'>2.7<!-- tex4ht:ref: eqn_example_two  --></a>, we get equation <a href='#x4-5003r8'>2.8<!-- tex4ht:ref: equation_ex_three  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 111 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                             <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>𝑑𝑝</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑡</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn><mi>t</mi></mtd>                                             <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                             <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-5003r8'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.8)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+
+<h5 class='subsubsectionHead' id='the-chain-rule'><a id='x4-6000'></a>The Chain Rule</h5>
+<p><a id='x4-6000doc'></a>
+</p><p>Finding the limit of complicated functions using equation <a href='#x4-4005r5'>2.5<!-- tex4ht:ref: derivativedef  --></a> is very difficult. Therefore, calculus students typically memorize
+series of rules which correspond to the derivatives of functions. One of the most fundamental derivation rules is the chain
+rule. The chain rule deals with derivatives of functions <em><span class='cmti-10'>within</span></em> functions. Consider the function provided in equation
+<a href='#x4-6001r9'>2.9<!-- tex4ht:ref: chain_rule_one  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 121 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                          <mtr><mtd class='align-odd' columnalign='right'><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                          <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                          <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-6001r9'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.9)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>To simply equation <a href='#x4-6001r9'>2.9<!-- tex4ht:ref: chain_rule_one  --></a>, we can state <!-- l. 124 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+The chain rule then states <!-- l. 124 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>𝑑𝑓</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow></math>
+can be found using equation <a href='#x4-6002r10'>2.10<!-- tex4ht:ref: chain_rule_two  --></a>.
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 129 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑓</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi mathvariant='italic'>𝑑h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi mathvariant='italic'>𝑑𝑦</mi></mrow></mfrac>  <mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  </mtd>                                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                         <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-6002r10'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.10)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Essentially, you take the derivative of the outside function first, treating the inside function as a variable, and then take the
+derivative of the inside function. <br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='the-product-rule'><a id='x4-7000'></a>The Product Rule</h5>
+<p><a id='x4-7000doc'></a>
+</p><p>Consider a function <!-- l. 136 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> which consists of
+the product of two separate functions <!-- l. 136 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+and <!-- l. 136 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>, as
+shown in equation <a href='#x4-7001r11'>2.11<!-- tex4ht:ref: prduct_rule_one  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 141 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                         <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-7001r11'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.11)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The product rule states that the derivative of <!-- l. 144 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+can be calculated using equation <a href='#x4-7002r12'>2.12<!-- tex4ht:ref: prduct_rule_two  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 149 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                     <mtr><mtd class='align-odd' columnalign='right'> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑓</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi></mrow> 
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi mathvariant='italic'>𝑑h</mi></mrow> 
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac></mtd>                                     <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                     <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-7002r12'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.12)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The product rule can be derived by use of equation <a href='#x4-4005r5'>2.5<!-- tex4ht:ref: derivativedef  --></a>. However, calculus proofs are outside of the scope of this book.
+<br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='the-quotient-rule'><a id='x4-8000'></a>The Quotient Rule</h5>
+<p>Consider a function <!-- l. 156 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> which consists of
+the quotient of two separate functions <!-- l. 156 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+and <!-- l. 156 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>, as
+shown in equation <a href='#x4-8001r13'>2.13<!-- tex4ht:ref: quotient_rule_one  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 161 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+<mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-8001r13'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.13)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The quotient rule states that the derivative of <!-- l. 164 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+is as shown in equation <a href='#x4-8002r14'>2.14<!-- tex4ht:ref: quotient_rule_two  --></a>. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 169 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                     <mtr><mtd class='align-odd' columnalign='right'> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑓</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi></mrow> 
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi mathvariant='italic'>𝑑h</mi></mrow> 
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac></mrow> 
+         <mrow><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac>            </mtd>                                     <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                     <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-8002r14'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.14)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The quotient rule can be derived by use of equation <a href='#x4-4005r5'>2.5<!-- tex4ht:ref: derivativedef  --></a>. However, calculus proofs are outside of the scope of this book.
+<br class='newline' />
+
+</p> 
+
+<h4 class='subsectionHead' id='the-partial-derivative'><span class='titlemark'>2.1.2   </span> <a id='x4-90002.1.2'></a>The Partial Derivative</h4>
+<p>The partial derivative is used when we differentiate a function with more than two variables. An example of such a function
+is shown in equation <a href='#x4-9001r15'>2.15<!-- tex4ht:ref: part_derivative_first_func  --></a>.
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 182 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                            <mtr><mtd class='align-odd' columnalign='right'><mi>z</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                            <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                            <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-9001r15'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.15)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+                                                                                                
+                                                                                                
+<p>Now, we need to make a decision. Are we interested in finding out how much
+<!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math> changes per increment of
+<!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>? Or are we interested in
+finding out how much <!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>
+changes per increment of <!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>?
+Lets go with the change of <!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>
+with respect to <!-- l. 185 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>.
+This change can be expressed using equation <a href='#x4-9002r16'>2.16<!-- tex4ht:ref: part_derivative_two  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 190 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mi>C</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><msub><mrow><mi>z</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>z</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow> 
+<mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfrac></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-9002r16'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.16)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Following the example from section <a href='#the-derivative'>2.1.1<!-- tex4ht:ref: sec_derivative  --></a>, equation <a href='#x4-9002r16'>2.16<!-- tex4ht:ref: part_derivative_two  --></a> will tell us how much
+<!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math> changes
+from <!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></math> to
+<!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub></math>. However, we are interested in the
+amount <!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math> is changed <em><span class='cmti-10'>instantaneously</span></em>.
+Therefore, we can say that <!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi></mrow></math>
+where <!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>h</mi></math> is
+an infinitesimally small quantity. Plugging this into equation <a href='#x4-9002r16'>2.16<!-- tex4ht:ref: part_derivative_two  --></a> we get equation <a href='#x4-9003r17'>2.17<!-- tex4ht:ref: partial_der_def  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 198 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                   <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>∂𝑧</mi></mrow>
+<mrow><mi mathvariant='italic'>∂𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+            <mrow><mi>h</mi></mrow></mfrac>           </mtd>                                   <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                   <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-9003r17'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.17)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Please note that in equation <a href='#x4-9003r17'>2.17<!-- tex4ht:ref: partial_der_def  --></a>, the denominator was simplified and equation <a href='#x4-9001r15'>2.15<!-- tex4ht:ref: part_derivative_first_func  --></a> was plugged in. The
+<!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>∂𝑧</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mi mathvariant='italic'>∂𝑥</mi></mrow></math> notation mimics the
+<!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>𝑑𝑦</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow></math> notation from equation
+<a href='#x4-4005r5'>2.5<!-- tex4ht:ref: derivativedef  --></a>. However, the fancy <!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>∂</mi></math>
+emphasizes that this is a <em><span class='cmti-10'>partial derivative</span></em>. Partial referrers to the fact that we are finding the change in
+<!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>
+with respect to one out of two possible variables. We can repeat the proceeding process to find
+<!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>∂𝑧</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mi mathvariant='italic'>∂𝑦</mi></mrow></math>.<br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='short-example1'><a id='x4-10000'></a>Short Example</h5>
+<p>Let us start with the function in equation <a href='#x4-10001r18'>2.18<!-- tex4ht:ref: partial_ex_a  --></a>.
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 210 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'><mi>z</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝑥𝑦</mi></mtd>                                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                         <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-10001r18'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.18)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>We are interested in finding <!-- l. 213 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>∂𝑧</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mi mathvariant='italic'>∂𝑥</mi></mrow></math>.
+In order to do this, we use equation <a href='#x4-9003r17'>2.17<!-- tex4ht:ref: partial_der_def  --></a> accordingly. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 218 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+                         <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>∂𝑧</mi></mrow>
+<mrow><mi mathvariant='italic'>∂𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>h</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mn>0</mn></mrow></munder><mfrac><mrow> <mrow><mo fence='true' form='prefix'>[</mo><mrow><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>h</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>y</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mo fence='true' form='postfix'>]</mo></mrow> <mo class='MathClass-bin' stretchy='false'>−</mo><mrow><mo fence='true' form='prefix'>[</mo><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝑥𝑦</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mo fence='true' form='postfix'>]</mo></mrow> </mrow> 
+                                 <mrow><mi>h</mi></mrow></mfrac>                       </mtd>                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                         <mtd class='align-label' columnalign='right'>
+</mtd></mtr></mtable></math>
+</div>
+<p>Solving the limit, we are left with equation <a href='#x4-10002r19'>2.19<!-- tex4ht:ref: partial_ex_b  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 226 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><mi mathvariant='italic'>∂𝑧</mi></mrow>
+<mrow><mi mathvariant='italic'>∂𝑥</mi></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>y</mi></mtd>                                           <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-10002r19'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.19)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>In order to provide a visualization, a graph of the function in equation <a href='#x4-10001r18'>2.18<!-- tex4ht:ref: partial_ex_a  --></a> with the
+<!-- l. 229 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>
+plane overlaid is provided in Figure <a href='#graph-of-equation-ref-partialexa-with-the-y-plane-overlaid-the-derivative-of-the-grey-line-is-z-x-at-y'>2.1<!-- tex4ht:ref: partial_figure  --></a>. The derivative of the grey line is
+<!-- l. 229 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi mathvariant='italic'>∂𝑧</mi></mrow>
+<mrow><mi mathvariant='italic'>∂𝑥</mi></mrow></mfrac></math> at
+<!-- l. 229 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.
+<br class='newline' />
+</p> 
+<figure class='figure'> 
+
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+<p id='graph-of-equation-ref-partialexa-with-the-y-plane-overlaid-the-derivative-of-the-grey-line-is-z-x-at-y'><img alt='PIC' class='graphics' src='main0x.png' /><!-- tex4ht:graphics  
+name="main0x.png" src="partial_figure.PNG"  
+ --> <a id='x4-10003r1'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Figure 2.1: </span><span class='content'>Graph of equation <a href='#x4-10001r18'>2.18<!-- tex4ht:ref: partial_ex_a  --></a> with the <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>
+plane overlaid. The derivative of the grey line is <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi mathvariant='italic'>∂𝑧</mi></mrow>
+<mrow><mi mathvariant='italic'>∂𝑥</mi></mrow></mfrac></math>
+at <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.</span></figcaption><!-- tex4ht:label?: x4-10003r1  -->
+                                                                                                
+                                                                                                
+</figure>
+<p>The partial derivative simply constrains the original function
+<!-- l. 238 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math> to a two
+dimensional plane and then finds the derivative (section <a href='#the-derivative'>2.1.1<!-- tex4ht:ref: sec_derivative  --></a>) on that plane. <br class='newline' />
+
+</p> 
+
+<h4 class='subsectionHead' id='the-integral'><span class='titlemark'>2.1.3   </span> <a id='x4-110002.1.3'></a>The Integral</h4>
+<p>In the derivative sections, we reviewed a method for finding the change in a variable (in section <a href='#the-derivative'>2.1.1<!-- tex4ht:ref: sec_derivative  --></a> this was
+<!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>) per an interval of another variable
+(in section <a href='#the-derivative'>2.1.1<!-- tex4ht:ref: sec_derivative  --></a> this was <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>).
+This process can also be thought of as a type of instantaneous division. We divide the change in
+<!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math> by the change
+in <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>, given that
+the change in <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>
+is infinitesimally small. The integral can be thought of as the opposite of the derivative; instead of dealing with instantaneous
+division, it deals with instantaneous multiplication. <br class='newline' />
+</p> 
+<p>To understand the integral, let us begin with the function shown in equation <a href='#x4-11001r20'>2.20<!-- tex4ht:ref: integral_function  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 249 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                             <mtr><mtd class='align-odd' columnalign='right'><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                             <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                             <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-11001r20'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.20)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Our goal is to multiply <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+by some interval <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math>.
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math> is equal to
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow></math>. The result of the multiplication
+will be represented by <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>M</mi></math>.
+Since <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math> varies as a
+function of <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>,
+we need to use the the series shown in equation <a href='#x4-11002r21'>2.21<!-- tex4ht:ref: int_proof_a  --></a> for such a multiplication. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 257 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                       <mtr><mtd class='align-odd' columnalign='right'><mi>M</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>4</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo></mtd>                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                       <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-11002r21'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.21)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Essentially, we are freezing the continuous <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+function at points <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+<!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub></math>,
+<!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msub></math> (and so forth) and then multiplying
+this function by an incremental <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><mi>x</mi></mrow></math>, which
+is the distance between each frozen <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>
+value. Naturally, <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>4</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo></mrow></math> must
+equal the total interval <!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math>
+(<!-- l. 260 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow></math>).
+<br class='newline' />
+</p> 
+<p>We also set up the above sequence so that each incremental
+<!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><mi>x</mi></mrow></math> value is of the same
+quantity. Therefore, <!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>2</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>3</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn><mo class='MathClass-rel' stretchy='false'>→</mo><mn>4</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math>.
+The <!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math> stands
+for <!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>
+incremental and will be used from now on. If we want to find the value of
+<!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math> we can
+use equation <a href='#x4-11003r22'>2.22<!-- tex4ht:ref: integral_proof_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 267 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow> 
+     <mrow><mi>n</mi></mrow></mfrac>    </mtd>                                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                         <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-11003r22'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.22)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>In equation <a href='#x4-11003r22'>2.22<!-- tex4ht:ref: integral_proof_b  --></a> <!-- l. 270 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math> is the total amount
+of terms we use to calculate <!-- l. 270 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>M</mi></math>.
+Plugging in equation <a href='#x4-11003r22'>2.22<!-- tex4ht:ref: integral_proof_b  --></a> into equation <a href='#x4-11002r21'>2.21<!-- tex4ht:ref: int_proof_a  --></a> we get equation <a href='#x4-11004r23'>2.23<!-- tex4ht:ref: integral_proof_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 273 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+<mstyle class='label' id='x4-11004r23'></mstyle><!-- endlabel --><mtable class='aligned' rowlines='' style=''><mtr><mtd columnalign='right'><mi>M</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow>
+     <mrow><mi>n</mi></mrow></mfrac>     </mrow><mo fence='true' form='postfix'>)</mo></mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow>
+     <mrow><mi>n</mi></mrow></mfrac>     <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow> 
+     <mrow><mi>n</mi></mrow></mfrac>     </mrow><mo fence='true' form='postfix'>)</mo></mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub><mo class='MathClass-bin' stretchy='false'>+</mo></mtd>
+</mtr><mtr><mtd columnalign='right'><mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow>
+     <mrow><mi>n</mi></mrow></mfrac>     <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow> 
+     <mrow><mi>n</mi></mrow></mfrac>     <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow> 
+     <mrow><mi>n</mi></mrow></mfrac>     </mrow><mo fence='true' form='postfix'>)</mo></mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo></mtd>
+</mtr>                                                                                                </mtable>
+</mrow></math></td><td class='eq-no'>(2.23)</td></tr></table>
+<p></p> 
+</div>
+<p>We can rewrite equation <a href='#x4-11004r23'>2.23<!-- tex4ht:ref: integral_proof_c  --></a> as a series as shown in equation <a href='#x4-11005r24'>2.24<!-- tex4ht:ref: integral_proof_d  --></a>.<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 284 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                <mstyle class='label' id='x4-11005r24'></mstyle><!-- endlabel --><mi>M</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munderover accent='false' accentunder='false'><mrow><mo> ∑</mo>
+  </mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow>
+     <mrow><mi>n</mi></mrow></mfrac>     <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow> 
+     <mrow><mi>n</mi></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.24)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>How, here is the fun part. The more <!-- l. 289 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+terms we have, the more ”accurate” our result will become because we will be freezing
+<!-- l. 289 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> at more locations. Therefore,
+ideally, <!-- l. 289 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>n</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>∞</mi></mrow></math>. We can rewrite equation
+<a href='#x4-11005r24'>2.24<!-- tex4ht:ref: integral_proof_d  --></a> to include a limit for <!-- l. 289 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+approaching infinity. This is shown in equation <a href='#x4-11006r25'>2.25<!-- tex4ht:ref: integral_def_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 292 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                          <mstyle class='label' id='x4-11006r25'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub>
+    </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow>
+  <mrow><mi>n</mi></mrow></mfrac>   <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow> 
+  <mrow><mi>n</mi></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.25)</td></tr></table>
+<p></p> 
+</div>
+<p>In equation <a href='#x4-11006r25'>2.25<!-- tex4ht:ref: integral_def_b  --></a>, <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>M</mi></math> was
+replaced by the <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msubsup><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub></mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow></math>.
+The <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow></math> is called the
+integral sign and represents a big elongated S, which stands for sum. The integral is, as shown in the above sequences, a repeated sum. As
+stated previously, <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></math>
+and <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub></math> are the lower
+and upper bounds of <!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><mi>x</mi></mrow></math>.
+<!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></math> represents
+<!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math>
+which is multiplied and added an infinite amount of times, with the goal of multiplying
+<!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> by
+<!-- l. 297 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math>.
+<br class='newline' />
+</p> 
+<p>The integral can be easily visualized as the area under a curve, as shown in Figure <a href='#visualization-of-nolimits-ab-fx-dx-the-value-of-the-integral-is-the-area-of-the-region-bounded-by-fx-from-the-top-the-x-axis-from-the-bottom-a-on-the-left-and-b-on-the-right'>2.2<!-- tex4ht:ref: integral_figure  --></a>. <br class='newline' />
+</p> 
+<figure class='figure'> 
+
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+<p id='visualization-of-nolimits-ab-fx-dx-the-value-of-the-integral-is-the-area-of-the-region-bounded-by-fx-from-the-top-the-x-axis-from-the-bottom-a-on-the-left-and-b-on-the-right'><img alt='PIC' class='graphics' src='main1x.png' /><!-- tex4ht:graphics  
+name="main1x.png" src="integral_graph.PNG"  
+ --> <a id='x4-11007r2'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Figure 2.2: </span><span class='content'>Visualization of <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msubsup><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow></math>.
+The value of the integral is the area of the region bounded by <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+from the top, the <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>
+axis from the bottom, <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi></math>
+on the left, and <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>b</mi></math>
+on the right.                                                                                      </span></figcaption><!-- tex4ht:label?: x4-11007r2  -->
+                                                                                                
+                                                                                                
+</figure>
+
+<h5 class='subsubsectionHead' id='a-short-example'><a id='x4-12000'></a>A short example</h5>
+<p>Let us begin with the function in equation <a href='#x4-12001r26'>2.26<!-- tex4ht:ref: integral_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 313 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                              <mstyle class='label' id='x4-12001r26'></mstyle><!-- endlabel --><mi>v</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn><mi>t</mi>
+</mrow></math></td><td class='eq-no'>(2.26)</td></tr></table>
+<p></p> 
+</div>
+<p>We are interested in integrating (multiplying) this term by the interval
+<!-- l. 318 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>0</mn> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></math>. For the purpose of this
+example, let us assume that <!-- l. 318 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>v</mi></math>
+is velocity and <!-- l. 318 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>t</mi></math>
+is time. You may notice that we are multiplying velocity by an interval of time
+(<!-- l. 318 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>0</mn> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></math>)... we are calculating position
+traveled during the time period <!-- l. 318 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>0</mn> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></math>.
+Plugging in equation <a href='#x4-12001r26'>2.26<!-- tex4ht:ref: integral_ex_a  --></a> to equation <a href='#x4-11006r25'>2.25<!-- tex4ht:ref: integral_def_b  --></a> we get equation <a href='#x4-12002r27'>2.27<!-- tex4ht:ref: integral_ex_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 321 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                               <mstyle class='label' id='x4-12002r27'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mn>2</mn><mi mathvariant='italic'>𝑡𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mn>2</mn> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+<mrow><mi>n</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow> 
+<mrow><mi>n</mi></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.27)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>Simplifying equation <a href='#x4-12002r27'>2.27<!-- tex4ht:ref: integral_ex_b  --></a>, we get equation <a href='#x4-12003r28'>2.28<!-- tex4ht:ref: int_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 329 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                <mstyle class='label' id='x4-12003r28'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mn>2</mn><mi mathvariant='italic'>𝑡𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mn>2</mn><msup><mrow> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+<mrow><mi>n</mi></mrow></mfrac> </mrow><mo fence='true' form='postfix'>)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi>
+</mrow></math></td><td class='eq-no'>(2.28)</td></tr></table>
+<p></p> 
+</div>
+<p>Part of this sequence actually has a known solution shown in equation <a href='#x4-12004r29'>2.29<!-- tex4ht:ref: sequence_cheating_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 337 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                       <mstyle class='label' id='x4-12004r29'></mstyle><!-- endlabel --><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+   </mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>i</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.29)</td></tr></table>
+<p></p> 
+</div>
+<p>There are numerous visual and traditional mathematical proofs for the series sum shown in equation <a href='#x4-12004r29'>2.29<!-- tex4ht:ref: sequence_cheating_a  --></a>. These will not be covered in this
+book. Since we know that <!-- l. 342 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+<mrow><mi>n</mi></mrow></mfrac> </mrow></math>
+is a constant, we can plug in equation <a href='#x4-12004r29'>2.29<!-- tex4ht:ref: sequence_cheating_a  --></a> into equation <a href='#x4-12003r28'>2.28<!-- tex4ht:ref: int_ex_a  --></a> to get equation <a href='#x4-12005r30'>2.30<!-- tex4ht:ref: integral_ex_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 345 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <mstyle class='label' id='x4-12005r30'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>t</mi></mrow></msubsup><mn>2</mn><mi mathvariant='italic'>𝑡𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow>
+<mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><mn>2</mn><msup><mrow> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+<mrow><mi>n</mi></mrow></mfrac> </mrow><mo fence='true' form='postfix'>)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.30)</td></tr></table>
+<p></p> 
+</div>
+<p>Evaluating the limit in equation <a href='#x4-12005r30'>2.30<!-- tex4ht:ref: integral_ex_c  --></a>, we get equation <a href='#x4-12006r31'>2.31<!-- tex4ht:ref: integral_final_ex  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 353 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x4-12006r31'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>t</mi></mrow></msubsup><mn>2</mn><mi mathvariant='italic'>𝑡𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msubsup><mrow><mi>t</mi></mrow><mrow>
+<mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup>
+</mrow></math></td><td class='eq-no'>(2.31)</td></tr></table>
+<p></p> 
+</div>
+<p>You may notice that this gave us the exact same output as equation <a href='#x4-5001r6'>2.6<!-- tex4ht:ref: eqn_short_ex_der  --></a>. We essentially just undid what was done in
+the example in section <a href='#x4-5000doc'>2.1.1.0<!-- tex4ht:ref: short_ex_der  --></a>. This solidifies the concept that the integral is the opposite of a derivative.
+<br class='newline' />
+
+</p> 
+
+<h4 class='subsectionHead' id='double-and-beyond-integrals'><span class='titlemark'>2.1.4   </span> <a id='x4-130002.1.4'></a>Double (and beyond) Integrals</h4>
+<p>In section <a href='#the-integral'>2.1.3<!-- tex4ht:ref: sec_integral  --></a> we reviewed how to multiply <!-- l. 362 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+by an interval <!-- l. 362 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math> if
+<!-- l. 362 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math> varies as
+a function of <!-- l. 362 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>.
+In this section, we expand the definition of the integral to make it compatible with multiple variables. In order to do this, let
+us begin with equation <a href='#x4-13001r32'>2.32<!-- tex4ht:ref: double_int_equation  --></a>.
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 367 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                            <mtr><mtd class='align-odd' columnalign='right'><mi>z</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mtd>                                            <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                            <mtd class='align-label' columnalign='right'><mstyle class='label' id='x4-13001r32'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.32)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Our goal is to multiply <!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>
+by some interval <!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math>
+and <!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>y</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math>.
+<!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math> is equal
+to <!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow></math>.
+<!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>y</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow></math> is equal
+to <!-- l. 370 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>B</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>y</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow></math>.
+Plugging this into equation <a href='#x4-11006r25'>2.25<!-- tex4ht:ref: integral_def_b  --></a> we get equation <a href='#x4-13002r33'>2.33<!-- tex4ht:ref: integral_doub_def_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 373 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+          <mstyle class='label' id='x4-13002r33'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>B</mi></mrow></msub>
+    </mrow></msubsup><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>A</mi></mrow></msub></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>B</mi></mrow></msub>
+    </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>j</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><munderover accent='false' accentunder='false'><mrow><mo> ∑</mo>
+</mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>f</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow>
+  <mrow><mi>n</mi></mrow></mfrac>   <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi><mo class='MathClass-punc' stretchy='false'>,</mo> <mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>y</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow> 
+  <mrow><mi>n</mi></mrow></mfrac>   <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>j</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow> 
+  <mrow><mi>n</mi></mrow></mfrac>   <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>y</mi></mrow><mrow><mi mathvariant='italic'>𝑡𝑜𝑡</mi></mrow></msub></mrow> 
+  <mrow><mi>n</mi></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.33)</td></tr></table>
+<p></p> 
+</div>
+<p>As with the single integral, we are finding <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>
+at each incremental location <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi></mrow></math> and
+multiplying this value by the interval <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>x</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math>
+and <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Δ</mi><msub><mrow><mi>y</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑛𝑐</mi></mrow></msub></mrow></math>.
+All these “multiplications” are then added together. In equation <a href='#x4-13002r33'>2.33<!-- tex4ht:ref: integral_doub_def_b  --></a>, we first iterate through all
+<!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math> intervals with
+<!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>j</mi></math> fixed at 1, and then
+move on to <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>j</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn></mrow></math> and so forth.
+This makes <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math> the inner
+integration variable and <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>
+the outer integration variable. However, since this is all multiplication and addition it does not matter which order we use. The
+solution to <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑥</mi></mrow></math> is
+the same as <!-- l. 378 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑦𝑑𝑥</mi></mrow></math>.
+                                                                                                
+                                                                                                
+<br class='newline' />
+</p> 
+<p>The double integral can be easily visualized as the volume under a surface, as shown in Figure <a href='#visualization-of-nolimits-cd-nolimits-ab-fxy-dxdy-the-value-of-the-integral-is-the-volume-of-the-region-bounded-by-fxy-from-the-top-and-the-xy-plane-from-the-bottom-within-the-bounds-of-xa-to-xb-and-yc-to-yd'>2.3<!-- tex4ht:ref: doubleintegral_figure  --></a>. <br class='newline' />
+</p> 
+<figure class='figure'> 
+
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+<p id='visualization-of-nolimits-cd-nolimits-ab-fxy-dxdy-the-value-of-the-integral-is-the-volume-of-the-region-bounded-by-fxy-from-the-top-and-the-xy-plane-from-the-bottom-within-the-bounds-of-xa-to-xb-and-yc-to-yd'><img alt='PIC' class='graphics' src='main2x.png' /><!-- tex4ht:graphics  
+name="main2x.png" src="double_int_figure.PNG"  
+ --> <a id='x4-13003r3'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Figure 2.3: </span><span class='content'>Visualization of <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msubsup><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>c</mi></mrow><mrow><mi>d</mi></mrow></msubsup><msubsup><mrow><mo> ∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi></mrow></math>.
+The value of the integral is the volume of the region bounded by <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+from the top and the <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>y</mi></mrow></math>
+plane from the bottom within the bounds of <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi></mrow></math>
+to <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>b</mi></mrow></math>
+and <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>c</mi></mrow></math>
+to <!-- l. 385 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>d</mi></mrow></math>.</span></figcaption><!-- tex4ht:label?: x4-13003r3  -->
+                                                                                                
+                                                                                                
+</figure>
+<p>We can follow a similar pattern for variables that are a function of three (or more) variables. In this case we would get a
+triple (or more) integral. <br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='a-short-example1'><a id='x4-14000'></a>A short example</h5>
+<p>Let us begin with the function provided in equation <a href='#x4-14001r34'>2.34<!-- tex4ht:ref: partial_ex_func  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 396 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                             <mstyle class='label' id='x4-14001r34'></mstyle><!-- endlabel --><mi>z</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='italic'>𝑥𝑦</mi>
+</mrow></math></td><td class='eq-no'>(2.34)</td></tr></table>
+<p></p> 
+</div>
+<p>We are interested in integrating (multiplying) this term by the interval
+<!-- l. 401 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>0</mn> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></math> and
+<!-- l. 401 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>0</mn> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow></math>.
+Plugging the equation <a href='#x4-14001r34'>2.34<!-- tex4ht:ref: partial_ex_func  --></a> into equation <a href='#x4-13002r33'>2.33<!-- tex4ht:ref: integral_doub_def_b  --></a> we get equation <a href='#x4-14002r35'>2.35<!-- tex4ht:ref: double_int_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 404 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                <mstyle class='label' id='x4-14002r35'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>j</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><munderover accent='false' accentunder='false'><mrow><mo> ∑</mo>
+</mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+ <mrow><mi>n</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>i</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mfrac><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow>
+ <mrow><mi>n</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>j</mi></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow> 
+ <mrow><mi>n</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>∗</mo><mfrac><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub></mrow> 
+ <mrow><mi>n</mi></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.35)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>As before, part of this sequence actually has a known solution shown in equation <a href='#x4-14003r36'>2.36<!-- tex4ht:ref: doublt_int_ex_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 412 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                       <mstyle class='label' id='x4-14003r36'></mstyle><!-- endlabel --><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+   </mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>i</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.36)</td></tr></table>
+<p></p> 
+</div>
+<p>Plugging equation <a href='#x4-14003r36'>2.36<!-- tex4ht:ref: doublt_int_ex_c  --></a> into equation <a href='#x4-14002r35'>2.35<!-- tex4ht:ref: double_int_ex_a  --></a> and simplifying we get equation <a href='#x4-14004r37'>2.37<!-- tex4ht:ref: double_int_eqn_ex_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 420 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                       <mstyle class='label' id='x4-14004r37'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><mfrac><mrow><msubsup><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup><msubsup><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup></mrow> 
+    <mrow><msup><mrow><mi>n</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow></mfrac>     <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>     <munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>j</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mi>j</mi>
+</mrow></math></td><td class='eq-no'>(2.37)</td></tr></table>
+<p></p> 
+</div>
+<p>Now we can plug in equation <a href='#x4-14003r36'>2.36<!-- tex4ht:ref: doublt_int_ex_c  --></a> again; given that we replace
+<!-- l. 425 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>i</mi></math> with
+<!-- l. 425 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>j</mi></math>. Doing
+this we, are left with the limit provided in equation <a href='#x4-14005r38'>2.38<!-- tex4ht:ref: double_int_x  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 428 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                       <mstyle class='label' id='x4-14005r38'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> lim</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></munder><mfrac><mrow><msubsup><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup><msubsup><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup></mrow> 
+    <mrow><msup><mrow><mi>n</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow></mfrac>     <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>      <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+     <mrow><mn>2</mn></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.38)</td></tr></table>
+<p></p> 
+</div>
+<p>Evaluating the limit in equation <a href='#x4-14005r38'>2.38<!-- tex4ht:ref: double_int_x  --></a>, we obtain the answer as shown in equation <a href='#x4-14006r39'>2.39<!-- tex4ht:ref: double_int_anser  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 436 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <mstyle class='label' id='x4-14006r39'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>y</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow></msub>
+   </mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>4</mn></mrow></mfrac><msubsup><mrow><mi>x</mi></mrow><mrow><mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup><msubsup><mrow><mi>y</mi></mrow><mrow>
+<mi>f</mi></mrow><mrow><mn>2</mn></mrow></msubsup>
+</mrow></math></td><td class='eq-no'>(2.39)</td></tr></table>
+<p></p> 
+</div>
+
+<h4 class='subsectionHead' id='methods-of-integration'><span class='titlemark'>2.1.5   </span> <a id='x4-150002.1.5'></a>Methods of Integration</h4>
+<p>The integral is defined in equation <a href='#x4-11006r25'>2.25<!-- tex4ht:ref: integral_def_b  --></a>. Considering we are dealing with an sum with a number
+of terms which approach infinity, finding a solution for <em><span class='cmti-10'>any</span></em> function can be very hard. In the
+short examples provided for both the integral and double integral we used the convenient identity
+<!-- l. 443 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msubsup><mrow><mi class='MathClass-op'>∑</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo>
+  <!-- nolimits --></mrow><mrow><mi>n</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mi>i</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi>n</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>n</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+    <mrow><mn>2</mn></mrow></mfrac>     </mrow></math>.
+However, not every function has a closed form equation for a given sum. In practice, integrals are usually solved with the help
+of known base function integrals. Algebraic manipulations are used to simplify an original function into one in the form of
+such base functions, allowing for easier integration. In this section, three common algebraic manipulations used to simplify
+integrals are provided. This is not a comprehensive list; there are other methods such as trig substitution which
+are also used to simplify integrals. However, the methods included in this section are deemed most relevant.
+<br class='newline' />
+
+                                                                                                
+                                                                                                
+</p> 
+
+<h5 class='subsubsectionHead' id='u-substitution'><a id='x4-16000'></a>U Substitution</h5>
+<p><a id='x4-16000doc'></a>
+</p><p>U substitution is a process of reversing the chain rule (the chain rule is introduced in section <a href='#x4-6000doc'>2.1.1.0<!-- tex4ht:ref: sec_chain_rule  --></a>). Consider the integral
+shown in equation <a href='#x4-16001r40'>2.40<!-- tex4ht:ref: u_sub_eqn  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 450 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                        <mstyle class='label' id='x4-16001r40'></mstyle><!-- endlabel --><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑓</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+    <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>   <mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.40)</td></tr></table>
+<p></p> 
+</div>
+<p>By using the substitution <!-- l. 455 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+we can rewrite the equation <a href='#x4-16001r40'>2.40<!-- tex4ht:ref: u_sub_eqn  --></a> as shown in equation <a href='#x4-16002r41'>2.41<!-- tex4ht:ref: u_sub_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 458 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                            <mstyle class='label' id='x4-16002r41'></mstyle><!-- endlabel --><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑓</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>u</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <mi mathvariant='italic'>𝑑𝑢</mi>
+</mrow></math></td><td class='eq-no'>(2.41)</td></tr></table>
+<p></p> 
+</div>
+<p>The idea here is equation <a href='#x4-16002r41'>2.41<!-- tex4ht:ref: u_sub_b  --></a> is simpler to look at and therefore easier for to integrate. <br class='newline' />
+
+                                                                                                
+                                                                                                
+</p> 
+
+<h5 class='subsubsectionHead' id='short-example2'><a id='x4-17000'></a>Short Example</h5>
+<p>Consider the function provided in equation <a href='#x4-17001r42'>2.42<!-- tex4ht:ref: u_sub_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 470 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                         <mstyle class='label' id='x4-17001r42'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>x</mi></mrow></msubsup><mn>2</mn><mi>x</mi><mstyle><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --> <mrow><mo fence='true' form='prefix'>(</mo><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.42)</td></tr></table>
+<p></p> 
+</div>
+<p>Setting <!-- l. 475 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></math>,
+we can rewrite the equation <a href='#x4-17001r42'>2.42<!-- tex4ht:ref: u_sub_ex_a  --></a> as shown in equation <a href='#x4-17002r43'>2.43<!-- tex4ht:ref: u_sub_ex_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 478 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x4-17002r43'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>x</mi></mrow></msubsup><mstyle> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>u</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑢</mi>
+</mrow></math></td><td class='eq-no'>(2.43)</td></tr></table>
+<p></p> 
+</div>
+<p>It is given that <!-- l. 483 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --><mstyle><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>u</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo><mstyle> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>u</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+Therefore, plugging <!-- l. 483 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math>
+back in, our final answer is obtained as shown in equation <a href='#x4-17003r44'>2.44<!-- tex4ht:ref: u_sub_ex_c  --></a>. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 486 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                     <mstyle class='label' id='x4-17003r44'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>x</mi></mrow></msubsup><mn>2</mn><mi>x</mi><mstyle><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --> <mrow><mo fence='true' form='prefix'>(</mo><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mi mathvariant='italic'>𝑑𝑥</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><mstyle> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --> <mrow><mo fence='true' form='prefix'>(</mo><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mo fence='true' form='postfix'>)</mo></mrow>
+</mrow></math></td><td class='eq-no'>(2.44)</td></tr></table>
+<p></p> 
+</div>
+
+<h5 class='subsubsectionHead' id='integration-by-parts'><a id='x4-18000'></a>Integration by Parts</h5>
+<p><a id='x4-18000doc'></a>
+</p><p>Integration by Parts is a way of reducing the power of a term within a two term integral. The integration by parts identity is
+provided in equation <a href='#x4-18001r45'>2.45<!-- tex4ht:ref: int_by_part  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 496 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                               <mstyle class='label' id='x4-18001r45'></mstyle><!-- endlabel --><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>d</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>d</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mo fence='true' form='postfix'>)</mo></mrow>
+</mrow></math></td><td class='eq-no'>(2.45)</td></tr></table>
+<p></p> 
+</div>
+
+<h5 class='subsubsectionHead' id='short-example3'><a id='x4-19000'></a>Short Example</h5>
+<p>Consider the function provided in equation <a href='#x4-19001r46'>2.46<!-- tex4ht:ref: int_by_part_ex_a  --></a>. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 506 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x4-19001r46'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>x</mi></mrow></msubsup><mi>x</mi><mstyle><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.46)</td></tr></table>
+<p></p> 
+</div>
+<p>Let us define the above equation in terms of equation <a href='#x4-18001r45'>2.45<!-- tex4ht:ref: int_by_part  --></a>.
+<!-- l. 511 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi></mrow></math>, and
+<!-- l. 511 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>. Therefore,
+<!-- l. 511 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+Plugging this all into equation <a href='#x4-18001r45'>2.45<!-- tex4ht:ref: int_by_part  --></a> we are left with equation <a href='#x4-19002r47'>2.47<!-- tex4ht:ref: int_by_part_ex_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 514 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                               <mstyle class='label' id='x4-19002r47'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>x</mi></mrow></msubsup><mi>x</mi><mstyle><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo><mo>∫ 
+<!-- nolimits --></mo><!-- nolimits --><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.47)</td></tr></table>
+<p></p> 
+</div>
+<p>The integral in equation <a href='#x4-19002r47'>2.47<!-- tex4ht:ref: int_by_part_ex_b  --></a> simplifies so nicely because
+<!-- l. 519 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><mi>d</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+   <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn></mrow></math>.
+
+</p> 
+
+<h5 class='subsubsectionHead' id='partial-fraction-decomposition'><a id='x4-20000'></a>Partial Fraction Decomposition</h5>
+<p><a id='x4-20000doc'></a>
+</p><p>From algebra, we know the identity provided in equation <a href='#x4-20001r48'>2.48<!-- tex4ht:ref: partial_frac_identity  --></a> is true. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 526 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                   <mstyle class='label' id='x4-20001r48'></mstyle><!-- endlabel --> <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow>
+<mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>  <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow> 
+<mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mi mathvariant='italic'>𝐴𝑓</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝐵𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+    <mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.48)</td></tr></table>
+<p></p> 
+</div>
+<p>Equation <a href='#x4-20001r48'>2.48<!-- tex4ht:ref: partial_frac_identity  --></a>, <!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>
+and <!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> are both
+known constants. The partial fraction decomposition technique is a method of doing the opposite of this operation. Essentially,
+given <!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-bin' stretchy='false'>+</mo><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+     <mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac>     </mrow></math> we
+want to get <!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow> 
+<mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>  <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow> 
+<mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac></mrow></math>.
+The reason we want to decompose polynomial fractions in this way is because it is easier to integrate
+<!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow>
+<mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>  <mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow> 
+<mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac></mrow></math> than it is
+to integrate <!-- l. 531 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-bin' stretchy='false'>+</mo><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+     <mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac>     </mrow></math>.
+<br class='newline' />
+</p> 
+<p>The first step in a fraction decomposition is to write an equation in the general format provided in equation <a href='#x4-20002r49'>2.49<!-- tex4ht:ref: partial_frac_a  --></a>.
+<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 536 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                  <mstyle class='label' id='x4-20002r49'></mstyle><!-- endlabel --><mfrac><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+      <mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac>    <mo class='MathClass-rel' stretchy='false'>=</mo>   <mfrac><mrow><mi>A</mi></mrow> 
+<mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>   <mfrac><mrow><mi>B</mi></mrow> 
+<mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac>
+</mrow></math></td><td class='eq-no'>(2.49)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>In equation <a href='#x4-20002r49'>2.49<!-- tex4ht:ref: partial_frac_a  --></a>, <!-- l. 541 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
+and <!-- l. 541 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math>
+are both unknown constants. Multiplying both sides of equation <a href='#x4-20002r49'>2.49<!-- tex4ht:ref: partial_frac_a  --></a> by
+<!-- l. 541 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+<mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac></math> we get
+equation <a href='#x4-20003r50'>2.50<!-- tex4ht:ref: partial_frac_aab  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 544 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <mstyle class='label' id='x4-20003r50'></mstyle><!-- endlabel --><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='italic'>𝐴𝑓</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝐵𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td><td class='eq-no'>(2.50)</td></tr></table>
+<p></p> 
+</div>
+<p>From here it is quite obvious that <!-- l. 549 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></math>
+and <!-- l. 549 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>B</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></math>.
+In the case of more complicated algebra, a system of equations can be used to find
+<!-- l. 549 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> and
+<!-- l. 549 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math>.
+<br class='newline' />
+</p> 
+<p>There are some specific rules regarding situations where the denominator of the original equation is at a given power (for example
+<!-- l. 551 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mo class='MathClass-open' stretchy='false'>[</mo><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>]</mo></mrow><mrow><mi>k</mi></mrow></msup></math>) or when the power of the denominator
+is greater than 1 (for example <!-- l. 551 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝑏𝑥</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>c</mi></mrow></math>).
+The goal here is to provide a method overview and therefore we will not go over how to do partial fraction decomposition in
+these specific cases. <br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='short-example4'><a id='x4-21000'></a>Short Example</h5>
+<p>Suppose we tasked with solving the integral in equation <a href='#x4-21001r51'>2.51<!-- tex4ht:ref: partial_fraction_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 558 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                         <mstyle class='label' id='x4-21001r51'></mstyle><!-- endlabel --><mo>∫
+  <!-- nolimits --></mo><!-- nolimits -->  <mfrac><mrow><mn>5</mn><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>4</mn></mrow>
+<mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn></mrow></mfrac><mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.51)</td></tr></table>
+<p></p> 
+</div>
+<p>Factoring the denominator of equation <a href='#x4-21001r51'>2.51<!-- tex4ht:ref: partial_fraction_ex_a  --></a> and using equation <a href='#x4-20002r49'>2.49<!-- tex4ht:ref: partial_frac_a  --></a> we get the equation <a href='#x4-21002r52'>2.52<!-- tex4ht:ref: partial_frac_prac  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 566 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                  <mstyle class='label' id='x4-21002r52'></mstyle><!-- endlabel -->   <mfrac><mrow><mn>5</mn><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>4</mn></mrow>
+<mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo>    <mfrac><mrow><mi>A</mi></mrow> 
+<mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>   <mfrac><mrow><mi>B</mi></mrow> 
+<mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo>
+</mrow></math></td><td class='eq-no'>(2.52)</td></tr></table>
+<p></p> 
+</div>
+<p>Multiplying equation <a href='#x4-21002r52'>2.52<!-- tex4ht:ref: partial_frac_prac  --></a> by <!-- l. 571 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+we get equation <a href='#x4-21003r53'>2.53<!-- tex4ht:ref: partial_frac_prac_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 574 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                    <mstyle class='label' id='x4-21003r53'></mstyle><!-- endlabel --><mn>5</mn><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>4</mn> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>A</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>B</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td><td class='eq-no'>(2.53)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>Now, we can plug in 2 different values for <!-- l. 579 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>.
+It doesn’t matter which values. We will be then left with 2 equations and two unknowns. Solving this system of equations, we
+get <!-- l. 579 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>A</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn></mrow></math> and
+<!-- l. 579 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>B</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>3</mn></mrow></math>. We can
+plug these values into equation <a href='#x4-21002r52'>2.52<!-- tex4ht:ref: partial_frac_prac  --></a>, and then plug this new identity into the original integral. Doing this, we are left with
+equation <a href='#x4-21004r54'>2.54<!-- tex4ht:ref: partial_frac_final_ex  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 582 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                        <mstyle class='label' id='x4-21004r54'></mstyle><!-- endlabel --><mo>∫
+  <!-- nolimits --></mo><!-- nolimits -->  <mfrac><mrow><mn>2</mn></mrow>
+<mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mn>2</mn></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo>    <mfrac><mrow><mn>3</mn></mrow> 
+<mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn></mrow></mfrac><mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.54)</td></tr></table>
+<p></p> 
+</div>
+<p>The integral in equation <a href='#x4-21004r54'>2.54<!-- tex4ht:ref: partial_frac_final_ex  --></a> is easier to integrate than the integral in equation <a href='#x4-21001r51'>2.51<!-- tex4ht:ref: partial_fraction_ex_a  --></a>, although they are equivalent.
+<br class='newline' />
+                                                                                                
+                                                                                                
+</p> 
+<!-- l. 589 --><div class='crosslinks'><p class='noindent'>[<a href='mainse2.html'>next</a>] [<a href='mainse1.html'>front</a>] [<a href='mainch2.html#mainse1.html'>up</a>] </p></div>
+<p><a id='tailmainse1.html'></a>  </p> 
+ 
+</body> 
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Approximating Functions</title> 
+<meta charset='UTF-8' /> 
+<meta content='TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)' name='generator' /> 
+<link href='main.css' rel='stylesheet' type='text/css' /> 
+<!--  for beautifying  --><link href='site.css' rel='stylesheet' type='text/css' /> 
+<script type='text/x-mathjax-config'> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script> <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script> 
+</head><body>
+<!-- l. 2761 --><div class='crosslinks'><p class='noindent'>[<a href='mainse6.html'>next</a>] [<a href='mainse4.html'>prev</a>] [<a href='mainse4.html#tailmainse4.html'>prev-tail</a>] [<a href='#tailmainse5.html'>tail</a>] [<a href='mainch2.html#mainse5.html'>up</a>] </p></div>
+<h3 class='sectionHead' id='approximating-functions'><span class='titlemark'>2.5   </span> <a id='x8-620002.5'></a>Approximating Functions</h3>
+<p>This section is dedicated to methods of rewriting non-polynomial functions in a polynomial form. We will review two ways of
+doing this: the Taylor Series Expansion, and the Inner Product Method.
+
+</p> 
+
+<h4 class='subsectionHead' id='taylor-series-expansion'><span class='titlemark'>2.5.1   </span> <a id='x8-630002.5.1'></a>Taylor Series Expansion</h4>
+<p>The Taylor Series Expansion involves choosing constants of a polynomial in a manner that ensures that derivatives of said polynomial
+to the <!-- l. 2767 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='italic'>𝑛𝑡h</mi></mrow></math>
+degree equal the non-polynomial function at a given point. As can be deduced, in order for this to work we must assume that
+our non-polynomial function can be written as a standard series with unknown constants. This assumption is shown in
+equation <a href='#x8-63001r238'>2.238<!-- tex4ht:ref: taylor_eq_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2770 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                              <mstyle class='label' id='x8-63001r238'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow>
+<mi>n</mi></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.238)</td></tr></table>
+<p></p> 
+</div>
+<p>Our solution lies in finding the appropriate value for <!-- l. 2775 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>,
+<!-- l. 2775 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>, etc. In order to
+find <!-- l. 2775 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>, we can
+simply set <!-- l. 2775 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.
+Doing this, we get the equation <a href='#x8-63002r239'>2.239<!-- tex4ht:ref: taylor_ex_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 2778 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                            <mstyle class='label' id='x8-63002r239'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub>
+</mrow></math></td><td class='eq-no'>(2.239)</td></tr></table>
+<p></p> 
+</div>
+<p>In order to find <!-- l. 2783 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+we simply take the derivative of equation <a href='#x8-63001r238'>2.238<!-- tex4ht:ref: taylor_eq_a  --></a>. Differentiating and again setting
+<!-- l. 2783 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>, we get
+equation <a href='#x8-63003r240'>2.240<!-- tex4ht:ref: taylor_ex_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2786 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                           <mstyle class='label' id='x8-63003r240'></mstyle><!-- endlabel --><mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub>
+</mrow></math></td><td class='eq-no'>(2.240)</td></tr></table>
+<p></p> 
+</div>
+<p>We can find <!-- l. 2791 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> by repeating the
+differentiating exercise and again setting <!-- l. 2791 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.
+Doing this we get equation <a href='#x8-63004r241'>2.241<!-- tex4ht:ref: taylor_ex_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 2794 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                          <mstyle class='label' id='x8-63004r241'></mstyle><!-- endlabel --><mfrac><mrow><mn>1</mn></mrow>
+<mrow><mn>2</mn></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow>
+  <mrow><mi>d</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac>  <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub>
+</mrow></math></td><td class='eq-no'>(2.241)</td></tr></table>
+<p></p> 
+</div>
+<p>If we repeat differentiation <!-- l. 2799 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+times, we will find that function <!-- l. 2799 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+will be equal to equation <a href='#x8-63005r242'>2.242<!-- tex4ht:ref: taylor_ex_bb  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2802 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                   <mstyle class='label' id='x8-63005r242'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>2</mn></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>x</mi></mrow></mfrac>  <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>6</mn></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>3</mn></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi>d</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac>   <msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo>  <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mi>n</mi><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mi>n</mi></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+   <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>   <msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.242)</td></tr></table>
+<p></p> 
+</div>
+<p>In equation <a href='#x8-63005r242'>2.242<!-- tex4ht:ref: taylor_ex_bb  --></a>, we were able to easily find our desired constants because we fixed our
+<!-- l. 2807 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math> location
+at <!-- l. 2807 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.
+For this reason, we say that our polynomial approximation is <em><span class='cmti-10'>centered</span></em> at
+<!-- l. 2807 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>. In order to center our polynomial
+approximation at arbitrary point <!-- l. 2807 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi></mrow></math>,
+we start can start out with equation <a href='#x8-63006r243'>2.243<!-- tex4ht:ref: taylor_ex_meow  --></a>. This is a modified version of equation <a href='#x8-63001r238'>2.238<!-- tex4ht:ref: taylor_eq_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 2810 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                         <mstyle class='label' id='x8-63006r243'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow>
+<mi>n</mi></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.243)</td></tr></table>
+<p></p> 
+</div>
+<p>Finding the <!-- l. 2815 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
+values using differentiation, we get equation <a href='#x8-63007r244'>2.244<!-- tex4ht:ref: taylor_ex_cc  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2818 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+          <mstyle class='label' id='x8-63007r244'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mi mathvariant='italic'>𝑑𝑔</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>2</mn></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>x</mi></mrow></mfrac>  <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>6</mn></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>3</mn></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+  <mrow><mi>d</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac>   <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo>  <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mi>n</mi><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mi>n</mi></mrow></msup><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow> 
+   <mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>   <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>a</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.244)</td></tr></table>
+<p></p> 
+</div>
+<p>As can be easily deduced, our polynomial approximation for
+<!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> is most
+accurate at <!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi></mrow></math>
+(our function <!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+and the polynomial approximation give exactly the same output at this point). The further away we get from
+<!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi></mrow></math>,
+the more the output of our polynomial function diverges from the original non polynomial function
+<!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>. In addition, the
+more terms we consider within our theoretically infinite polynomial approximation, the more accurate the polynomial approximation is
+at outputting an equivalent value as the original function. This phenomenon can be observed in Figure <a href='#graph-showing-the-function-ysin-x-along-with-taylor-series-approximations-of-varying-order-order-corresponds-to-the-amount-of-terms-the-taylor-polynomial-goes-out-to-th-order-corresponds-to-one-term-st-to-two-terms-etc'>2.8<!-- tex4ht:ref: taylor_example_figure  --></a>, which shows the function
+<!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> along with a Taylor polynomial
+approximation (centered at <!-- l. 2823 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>)
+given different amounts of terms. <br class='newline' />
+</p> 
+<figure class='figure'> 
+
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+<p id='graph-showing-the-function-ysin-x-along-with-taylor-series-approximations-of-varying-order-order-corresponds-to-the-amount-of-terms-the-taylor-polynomial-goes-out-to-th-order-corresponds-to-one-term-st-to-two-terms-etc'><img alt='PIC' class='graphics' src='main4x.png' /><!-- tex4ht:graphics  
+name="main4x.png" src="taylor_series_figure.PNG"  
+ --> <a id='x8-63008r8'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Figure 2.8:                          </span><span class='content'>Graph                          showing                          the                          function
+<!-- l. 2828 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+along with Taylor series approximations of varying order. Order corresponds to the amount of terms the Taylor
+polynomial goes out to; 0th order corresponds to one term, 1st to two terms, etc.                             </span></figcaption><!-- tex4ht:label?: x8-63008r8  -->
+                                                                                                
+                                                                                                
+</figure>
+<p>It is quite time consuming to calculate a Taylor Series of any non-polynomial function
+<!-- l. 2832 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>. In
+order to shortcut this process, the Taylor approximations of common non-polynomial functions centered at
+<!-- l. 2832 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math> are
+provided in Table <a href='#table-showing-common-nonpolynomial-functions-centered-at-x'>2.4<!-- tex4ht:ref: table_taylor  --></a>. <br class='newline' />
+</p> 
+<div class='table'>
+                                                                                                
+                                                                                                
+<p></p> 
+<figure class='float'>
+                                                                                                
+                                                                                                
+<div class='center'>
+<p id='table-showing-common-nonpolynomial-functions-centered-at-x'>
+<a id='x8-63009r4'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Table 2.4:        </span><span class='content'>        Table        showing        common        non-polynomial        functions        centered        at
+<!-- l. 2836 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.</span></figcaption><!-- tex4ht:label?: x8-63009r4  -->
+<div class='tabular'> <table class='tabular' id='TBL-50' rules='groups'><colgroup id='TBL-50-1g'><col id='TBL-50-1' /></colgroup><colgroup id='TBL-50-2g'><col id='TBL-50-2' /></colgroup><tr id='TBL-50-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-1-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2838 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mstyle mathvariant='bold'><mi>𝐲</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>𝐠</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>𝐱</mi><mo class='MathClass-close' stretchy='false'>)</mo></mstyle></math>  </td><td class='td11' id='TBL-50-1-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <strong><span class='cmbx-10'>Taylor       Series       centered       at</span>
+  <!-- l. 2838 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math></strong>  </td>
+</tr><tr id='TBL-50-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-2-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-2-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td></tr><tr class='hline'><td></td><td></td></tr><tr id='TBL-50-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-3-1' style='white-space:normal; text-align:left; vertical-align:middle;'> </td><td class='td11' id='TBL-50-3-2' style='white-space:normal; text-align:left; vertical-align:middle;'></td>
+</tr><tr id='TBL-50-4-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-4-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2842 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>  <mfrac><mrow><mn>1</mn></mrow>
+<mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>x</mi></mrow></mfrac></mrow></math>  </td><td class='td11' id='TBL-50-4-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2842 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math>  </td>
+</tr><tr id='TBL-50-5-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-5-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-5-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td>
+</tr><tr id='TBL-50-6-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-6-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2844 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math>   </td><td class='td11' id='TBL-50-6-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2844 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow> 
+ <mrow><mn>2</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow> 
+<mrow><mn>3</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow> 
+<mrow><mn>4</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow> 
+<mrow><mi>n</mi><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> </mrow></math>  </td>
+</tr><tr id='TBL-50-7-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-7-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-7-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td>
+</tr><tr id='TBL-50-8-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-8-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2846 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>   </td><td class='td11' id='TBL-50-8-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2846 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow> 
+ <mrow><mn>2</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow> 
+<mrow><mn>4</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>6</mn></mrow></msup></mrow> 
+<mrow><mn>6</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mi>n</mi></mrow></msup></mrow> 
+<mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mi>n</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac></mrow></math>  </td>
+</tr><tr id='TBL-50-9-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-9-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-9-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td>
+</tr><tr id='TBL-50-10-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-10-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2848 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>   </td><td class='td11' id='TBL-50-10-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2848 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow> 
+<mrow><mn>3</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>5</mn></mrow></msup></mrow> 
+<mrow><mn>5</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>7</mn></mrow></msup></mrow> 
+<mrow><mn>7</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup>  <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mi>n</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mn>1</mn></mrow></msup></mrow> 
+<mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>2</mn><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac></mrow></math>  </td>
+</tr><tr id='TBL-50-11-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-11-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-11-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td>
+</tr><tr id='TBL-50-12-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-12-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2850 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='loglike'>ln</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>   </td><td class='td11' id='TBL-50-12-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2850 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow> 
+ <mrow><mn>2</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow> 
+ <mrow><mn>3</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow> 
+ <mrow><mn>4</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mn>1</mn></mrow></msup><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow> 
+ <mrow><mi>n</mi></mrow></mfrac> </mrow></math>  </td>
+</tr><tr id='TBL-50-13-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-13-1' style='white-space:normal; text-align:left; vertical-align:middle;'>                   </td><td class='td11' id='TBL-50-13-2' style='white-space:normal; text-align:left; vertical-align:middle;'>                                        </td>
+</tr><tr id='TBL-50-14-' style='vertical-align:baseline;'><td class='td11' id='TBL-50-14-1' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2852 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi class='loglike'>tan</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>   </td><td class='td11' id='TBL-50-14-2' style='white-space:normal; text-align:left; vertical-align:middle;'> <!-- l. 2852 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow> 
+ <mrow><mn>3</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>5</mn></mrow></msup></mrow> 
+ <mrow><mn>5</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>7</mn></mrow></msup></mrow> 
+ <mrow><mn>7</mn></mrow></mfrac>  <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup> <mfrac><mrow><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mi>n</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mn>1</mn></mrow></msup></mrow> 
+<mrow><mn>2</mn><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn></mrow></mfrac></mrow></math>  </td>
+</tr></table>                                                                           </div></div>
+</figure>
+</div>
+
+<h5 class='subsubsectionHead' id='example-eulers-identity'><a id='x8-64000'></a>Example: Euler’s Identity</h5>
+<p>In this example, we will generate a Taylor series approximation centered at
+<!-- l. 2859 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math> for the
+function provided in equation <a href='#x8-64001r245'>2.245<!-- tex4ht:ref: euler_example_aa_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2862 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                             <mstyle class='label' id='x8-64001r245'></mstyle><!-- endlabel --><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑥</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.245)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>In equation <a href='#x8-64001r245'>2.245<!-- tex4ht:ref: euler_example_aa_a  --></a>, <!-- l. 2867 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>i</mi></math> is the
+imaginary number <!-- l. 2867 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msqrt><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msqrt></math>
+introduced in section <a href='mainse8.html#imaginary-numbers'>2.8.3<!-- tex4ht:ref: section_img_num  --></a>. Plugging equation <a href='#x8-64001r245'>2.245<!-- tex4ht:ref: euler_example_aa_a  --></a> into equation <a href='#x8-63007r244'>2.244<!-- tex4ht:ref: taylor_ex_cc  --></a> (assuming
+<!-- l. 2867 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>), we get
+equation <a href='#x8-64002r246'>2.246<!-- tex4ht:ref: euler_example_aa_b  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2870 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                    <mstyle class='label' id='x8-64002r246'></mstyle><!-- endlabel --><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑥</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>i</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>2</mn></mrow></mfrac><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>i</mi> <mfrac><mrow><mn>1</mn></mrow>
+<mrow><mn>3</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>4</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>4</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>i</mi> <mfrac><mrow><mn>1</mn></mrow>
+<mrow><mn>5</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>5</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>6</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>6</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>i</mi> <mfrac><mrow><mn>1</mn></mrow>
+<mrow><mn>7</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>7</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td><td class='eq-no'>(2.246)</td></tr></table>
+<p></p> 
+</div>
+<p>We can regroup equation <a href='#x8-64002r246'>2.246<!-- tex4ht:ref: euler_example_aa_b  --></a> as shown in equation <a href='#x8-64003r247'>2.247<!-- tex4ht:ref: euler_example_aa_c  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2878 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                   <mstyle class='label' id='x8-64003r247'></mstyle><!-- endlabel --><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑥</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>2</mn></mrow></mfrac><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>4</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>4</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>6</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>6</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>i</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>3</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>5</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>5</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>7</mn><mo class='MathClass-punc' stretchy='false'>!</mo></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>7</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo></mrow><mo fence='true' form='postfix'>)</mo></mrow><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td><td class='eq-no'>(2.247)</td></tr></table>
+<p></p> 
+</div>
+<p>Now, you may notice from Table <a href='#table-showing-common-nonpolynomial-functions-centered-at-x'>2.4<!-- tex4ht:ref: table_taylor  --></a> that the left series in equation <a href='#x8-64003r247'>2.247<!-- tex4ht:ref: euler_example_aa_c  --></a> is the Taylor series for
+<!-- l. 2883 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>. The right series in equation
+<a href='#x8-64003r247'>2.247<!-- tex4ht:ref: euler_example_aa_c  --></a> is the Taylor series for <!-- l. 2883 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+Therefore, we can rewrite equation <a href='#x8-64003r247'>2.247<!-- tex4ht:ref: euler_example_aa_c  --></a> as shown in equation <a href='#x8-64004r248'>2.248<!-- tex4ht:ref: eulers_main_ref_a  --></a>. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2886 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                       <mstyle class='label' id='x8-64004r248'></mstyle><!-- endlabel --><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝑥</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>i</mi><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td><td class='eq-no'>(2.248)</td></tr></table>
+<p></p> 
+</div>
+<p>Equation <a href='#x8-64004r248'>2.248<!-- tex4ht:ref: eulers_main_ref_a  --></a> is called Euler’s formula. Plugging in <!-- l. 2891 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>π</mi></mrow></math>
+into equation <a href='#x8-64004r248'>2.248<!-- tex4ht:ref: eulers_main_ref_a  --></a>, we are able to get Euler’s identify, shown in equation <a href='#x8-64005r249'>2.249<!-- tex4ht:ref: eulers_main_ref_a_aa  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2894 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                             <mstyle class='label' id='x8-64005r249'></mstyle><!-- endlabel --><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝑖𝜋</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn>
+</mrow></math></td><td class='eq-no'>(2.249)</td></tr></table>
+<p></p> 
+</div>
+<p>We can use a similar process as presented in this example to prove equation <a href='#x8-64006r250'>2.250<!-- tex4ht:ref: eulers_main_ref_b  --></a> is true. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+                                                                                                
+                                                                                                
+<!-- l. 2902 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                      <mstyle class='label' id='x8-64006r250'></mstyle><!-- endlabel --><msup><mrow><mi>e</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='italic'>𝑖𝑥</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>i</mi><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td><td class='eq-no'>(2.250)</td></tr></table>
+<p></p> 
+</div>
+
+<h5 class='subsubsectionHead' id='expansion-on-eulers-identity'><a id='x8-65000'></a>Expansion on Euler’s Identity</h5>
+<p>In this example, we will use above equations <a href='#x8-64004r248'>2.248<!-- tex4ht:ref: eulers_main_ref_a  --></a> and <a href='#x8-64006r250'>2.250<!-- tex4ht:ref: eulers_main_ref_b  --></a> to simplify equation <a href='#x8-65001r251'>2.251<!-- tex4ht:ref: euler_example_xx_a  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2912 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                    <mstyle class='label' id='x8-65001r251'></mstyle><!-- endlabel --><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>λ</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mi mathvariant='italic'>𝜇𝑖</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>x</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>A</mi></mrow><mrow>
+<mn>2</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>λ</mi><mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='italic'>𝜇𝑖</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>x</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.251)</td></tr></table>
+<p></p> 
+</div>
+<p>Algebraically rewriting equation <a href='#x8-65001r251'>2.251<!-- tex4ht:ref: euler_example_xx_a  --></a> and plugging in equations <a href='#x8-64004r248'>2.248<!-- tex4ht:ref: eulers_main_ref_a  --></a> and <a href='#x8-64006r250'>2.250<!-- tex4ht:ref: eulers_main_ref_b  --></a> we get equation <a href='#x8-65002r252'>2.252<!-- tex4ht:ref: euler_expansion_placeholder  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2920 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                           <mstyle class='label' id='x8-65002r252'></mstyle><!-- endlabel --><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝜆𝑥</mi></mrow></msup> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝜇𝑥</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>A</mi></mrow><mrow>
+<mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>i</mi><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝜆𝑡</mi></mrow></msup><mstyle> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝜇𝑥</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td><td class='eq-no'>(2.252)</td></tr></table>
+                                                                                                
+                                                                                                
+<p></p> 
+</div>
+<p>Now, we can define two constants as shown in equations <a href='#x8-65003r253'>2.253<!-- tex4ht:ref: euler_constant_one  --></a> and <a href='#x8-65004r254'>2.254<!-- tex4ht:ref: euler_constant_two  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2930 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                          <mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mtd>                                          <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mspace width='2em'></mspace></mtd>                                                                                    <mtd class='align-label' columnalign='right'><mstyle class='label' id='x8-65003r253'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.253)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2936 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mtd>                                         <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo> <msub><mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mi>i</mi><mspace width='2em'></mspace></mtd>                                                                                  <mtd class='align-label' columnalign='right'><mstyle class='label' id='x8-65004r254'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.254)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Plugging in equations <a href='#x8-65003r253'>2.253<!-- tex4ht:ref: euler_constant_one  --></a> and <a href='#x8-65004r254'>2.254<!-- tex4ht:ref: euler_constant_two  --></a> into equation <a href='#x8-65002r252'>2.252<!-- tex4ht:ref: euler_expansion_placeholder  --></a> we are left with equation <a href='#x8-65005r255'>2.255<!-- tex4ht:ref: eulers_final  --></a>. <br class='newline' />
+</p> 
+
+                                                                                                
+                                                                                                
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2942 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                        <mstyle class='label' id='x8-65005r255'></mstyle><!-- endlabel --><msub><mrow><mi>A</mi></mrow><mrow><mn>1</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>λ</mi><mo class='MathClass-bin' stretchy='false'>+</mo><mi mathvariant='italic'>𝜇𝑖</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>x</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>A</mi></mrow><mrow>
+<mn>2</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>λ</mi><mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='italic'>𝜇𝑖</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow>
+<mn>1</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝜆𝑥</mi></mrow></msup> <mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝜇𝑥</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow>
+<mn>2</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mi mathvariant='italic'>𝜆𝑥</mi></mrow></msup><mstyle> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝜇𝑥</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td><td class='eq-no'>(2.255)</td></tr></table>
+<p></p> 
+</div>
+
+<h4 class='subsectionHead' id='inner-product-approximation'><span class='titlemark'>2.5.2   </span> <a id='x8-660002.5.2'></a>Inner Product Approximation</h4>
+<p>The Inner Product Approximation is an alternative way to fit a polynomial function to a non-polynomial function.
+As in the Taylor series method, we start out with a standard polynomial to be fitted to a target function
+<!-- l. 2949 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>. This
+“problem statement” is shown in equation <a href='#x8-66001r256'>2.256<!-- tex4ht:ref: inner_product_polynomial  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2952 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                              <mstyle class='label' id='x8-66001r256'></mstyle><!-- endlabel --><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow>
+<mi>n</mi></mrow></msub><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi></mrow></msup>
+</mrow></math></td><td class='eq-no'>(2.256)</td></tr></table>
+<p></p> 
+</div>
+<p>Again, as with the Taylor Series Method, our solution lies with finding the appropriate values for
+<!-- l. 2957 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>,
+<!-- l. 2957 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>, etc. In the Taylor Series Method,
+it was possible to solve for <!-- l. 2957 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>,
+<!-- l. 2957 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+etc. and then look for patterns. In this method, we need to decide from the start to which maximum value
+<!-- l. 2957 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math> our
+fitting polynomial goes out to. Essentially, we need to start out with a finite term fitting function. <br class='newline' />
+                                                                                                
+                                                                                                
+</p> 
+<p>As the name of this method suggests, we will be using a mathematical construct called the <em><span class='cmti-10'>inner
+product</span></em> in order to find these values. The definition of the inner product between two functions
+<!-- l. 2959 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> and
+<!-- l. 2959 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> on the
+interval <!-- l. 2959 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>[</mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math>
+is provided in equation <a href='#x8-66002r257'>2.257<!-- tex4ht:ref: inner_product_definition  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2962 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                         <mstyle class='label' id='x8-66002r257'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi>
+</mrow></math></td><td class='eq-no'>(2.257)</td></tr></table>
+<p></p> 
+</div>
+<p>The inner product can be thought of as analogous operator for continuous functions as the dot product (section <a href='mainse3.html#the-dot-product'>2.3.2<!-- tex4ht:ref: sec_dot_product  --></a>) is for
+vectors. You may remember from the vectors section (section <a href='mainse3.html#the-dot-product'>2.3.2<!-- tex4ht:ref: sec_dot_product  --></a>) that if the dot product of two vectors is 0, the vectors
+are considered orthogonal. In following this, equation <a href='#x8-66003r258'>2.258<!-- tex4ht:ref: orthogonal_vectors_def  --></a> provides the definition of orthogonal functions
+<!-- l. 2967 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> and
+<!-- l. 2967 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<table class='equation'><tr><td>
+<!-- l. 2970 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                       <mstyle class='label' id='x8-66003r258'></mstyle><!-- endlabel --><msubsup><mrow><mo>∫
+  <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn>
+</mrow></math></td><td class='eq-no'>(2.258)</td></tr></table>
+<p></p> 
+</div>
+                                                                                                
+                                                                                                
+<p>Given equation <a href='#x8-66003r258'>2.258<!-- tex4ht:ref: orthogonal_vectors_def  --></a>, we can make a mental extrapolation to the curve fitting methodology presented in section <a href='mainse4.html#curve-fitting'>2.4<!-- tex4ht:ref: section_fitting  --></a>. As a
+reminder, in this procedure, our target modeling function provided us with vectors within a given vector space (shown
+in equation <a href='mainse4.html#x7-57003r207'>2.207<!-- tex4ht:ref: curve_fitting_org  --></a>). We used the Gram-Schmidt Orthogonalization Procedure to orthogonalize the vectors
+within this vector space with the goal of deriving an orthogonal basis. We then projected the given vector
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>y</mi></mrow><mo accent='true'>→</mo></mover></math> onto this
+new vector space (shown in equation <a href='mainse4.html#x7-57005r209'>2.209<!-- tex4ht:ref: equation_projec_a  --></a>). Within the process of projecting, we got the closest vector to
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover accent='true'><mrow><mi>y</mi></mrow><mo accent='true'>→</mo></mover></math>
+that exists within this vector space (this closest vector is defined within section <a href='mainse4.html#curve-fitting'>2.4<!-- tex4ht:ref: section_fitting  --></a> as
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mover accent='true'><mrow><mi>y</mi></mrow><mo accent='true'>→</mo></mover></mrow><mrow><mi>f</mi></mrow></msub></math>). Our
+mental extrapolation consists of thinking of our target modeling function (equation <a href='#x8-66001r256'>2.256<!-- tex4ht:ref: inner_product_polynomial  --></a>) as a span of functions
+<span class='cmsy-10'>{</span><!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></math>, ...,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></math><span class='cmsy-10'>}</span>. We are
+trying to find the combination of functions within this span that makes this span best fit our given function
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> on the interval
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>[</mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math> (although I am using
+slightly different terminology here to drive the connection between function fitting and curve fitting, this best fit manifests itself in simply
+finding the correct <!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+etc). Therefore, we can follow the general procedure laid out in section <a href='mainse4.html#curve-fitting'>2.4<!-- tex4ht:ref: section_fitting  --></a>, but tweak it for functions
+(replace every dot product with an inner product). Our first step is to derive a set of orthogonal functions
+<span class='cmsy-10'>{</span><!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub></math>,...,
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub></math><span class='cmsy-10'>} </span>for our
+span of functions. We can do this my mimicking the Gram-Schmidt Orthogonalization Procedure out to desired function
+<!-- l. 2975 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></math> as shown
+in the following sequence. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2983 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='none none' style=''>
+                               <mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub></mtd>                               <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn><mspace width='2em'></mspace></mtd>                                                               <mtd class='align-label' columnalign='right'></mtd>                               <mtd class='align-label'>
+                               <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub></mtd>                               <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi mathvariant='italic'>𝑥𝑑𝑥</mi></mrow> 
+<mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub><mspace width='2em'></mspace></mtd>                                               <mtd class='align-label' columnalign='right'></mtd>                               <mtd class='align-label'>
+                               <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub></mtd>                               <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mi mathvariant='italic'>𝑑𝑥</mi></mrow> 
+<mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mi mathvariant='italic'>𝑑𝑥</mi></mrow> 
+<mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub><mspace width='2em'></mspace></mtd>                               <mtd class='align-label' columnalign='right'></mtd>                               <mtd class='align-label'>
+                               <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub></mtd>                               <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mspace width='2em'></mspace></mtd>                                                              <mtd class='align-label' columnalign='right'></mtd>                               <mtd class='align-label'>
+<mspace width='2em'></mspace></mtd></mtr></mtable></math>
+                                                                                                
+                                                                                                
+</div>
+<p>In following the curve fitting procedure, our next step is to project our given function
+<!-- l. 2986 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> onto our
+derived orthogonal set of functions. We can do this my mimicking equation <a href='mainse4.html#x7-57005r209'>2.209<!-- tex4ht:ref: equation_projec_a  --></a> for functions as shown in equation <a href='#x8-66004r259'>2.259<!-- tex4ht:ref: inner_product_proj  --></a>.
+<br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 2991 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+               <mtr><mtd class='align-odd' columnalign='right'><mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow>
+ <mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow> 
+ <mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow> 
+ <mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac>  <msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi mathvariant='italic'>𝑑𝑥</mi></mrow> 
+ <mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></msubsup><msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∗</mo> <msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac> <msub><mrow><mi>e</mi></mrow><mrow><mi>n</mi></mrow></msub></mtd>               <mtd class='align-even'><mspace width='2em'></mspace></mtd>               <mtd class='align-label' columnalign='right'><mstyle class='label' id='x8-66004r259'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.259)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>In doing this, we will get a polynomial with coefficients. We have essentially found the points
+<!-- l. 2994 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>,
+<!-- l. 2994 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></math>,
+etc. that cause our original function (equation <a href='#x8-66001r256'>2.256<!-- tex4ht:ref: inner_product_polynomial  --></a>) to most closely match
+<!-- l. 2994 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> on the given
+interval <!-- l. 2994 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>[</mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math>.
+<br class='newline' />
+
+</p> 
+
+<h5 class='subsubsectionHead' id='short-example13'><a id='x8-67000'></a>Short Example</h5>
+<p>In this example, we will fit the equation <!-- l. 2998 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>
+to a polynomial. We will limit our fitting polynomial to the first 3 terms of the general equation provided in <a href='#x8-66001r256'>2.256<!-- tex4ht:ref: inner_product_polynomial  --></a> on the
+interval <!-- l. 2998 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>[</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math>.
+Therefore, our problem statement resembles equation <a href='#x8-67001r260'>2.260<!-- tex4ht:ref: inner_product_ex  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 3003 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                       <mtr><mtd class='align-odd' columnalign='right'><mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mtd>                                       <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                       <mtd class='align-label' columnalign='right'><mstyle class='label' id='x8-67001r260'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.260)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>Our goal is to find <!-- l. 3006 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></math>,
+<!-- l. 3006 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>, and
+<!-- l. 3006 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> that make this as true as possible.
+Our modeling function span is <!-- l. 3006 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>{</mo><mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+Our first step is orthogonalize these functions using the Gram-Schmidt Orthogoanliztaion Procedure for functions laid out
+previously. Doing this, we get the following orthogonal function basis. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+</p> 
+<!-- tex4ht:inline --><!-- l. 3013 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='none' style=''>
+                                           <mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>1</mn></mrow></msub></mtd>                                           <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn><mspace width='2em'></mspace></mtd>                                                <mtd class='align-label' columnalign='right'></mtd>                                           <mtd class='align-label'>
+                                           <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>2</mn></mrow></msub></mtd>                                           <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi><mspace width='2em'></mspace></mtd>                                                <mtd class='align-label' columnalign='right'></mtd>                                           <mtd class='align-label'>
+                                           <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><msub><mrow><mi>e</mi></mrow><mrow><mn>3</mn></mrow></msub></mtd>                                           <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>3</mn></mrow></mfrac><mspace width='2em'></mspace></mtd>                                           <mtd class='align-label' columnalign='right'></mtd>                                           <mtd class='align-label'>
+<mspace width='2em'></mspace></mtd></mtr></mtable></math>
+</div>
+<p>Now we simply project <!-- l. 3016 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>
+onto the orthogonal basis using equation <a href='#x8-66004r259'>2.259<!-- tex4ht:ref: inner_product_proj  --></a>. Doing this, we get equation <a href='#x8-67002r261'>2.261<!-- tex4ht:ref: gs_fnctions_inner_product_ans  --></a>. <br class='newline' />
+</p> 
+
+<div class='center'>
+<p>
+</p> 
+<p>
+                                                                                                
+                                                                                                
+</p> 
+<!-- tex4ht:inline --><!-- l. 3021 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align' columnalign='left' displaystyle='true' rowlines='' style=''>
+                                         <mtr><mtd class='align-odd' columnalign='right'><mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>≈</mo> <mfrac><mrow><mn>15</mn></mrow> 
+<mrow><mn>16</mn></mrow></mfrac><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>3</mn><mo class='MathClass-bin' stretchy='false'>∕</mo><mn>16</mn></mtd>                                         <mtd class='align-even'><mspace width='2em'></mspace></mtd>                                         <mtd class='align-label' columnalign='right'><mstyle class='label' id='x8-67002r261'></mstyle><!-- endlabel --><mstyle class='maketag'><mtext>(2.261)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace>
+</mtd></mtr></mtable></math>
+</div>
+<p>The function <!-- l. 3024 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>
+along with the polynomial approximation shown in equation <a href='#x8-67002r261'>2.261<!-- tex4ht:ref: gs_fnctions_inner_product_ans  --></a> is shown in Figure <a href='#graph-showing-the-function-yx-along-with-the-nd-order-inner-product-approximation-shown-in-equation-ref-gsfnctionsinnerproductans'>2.9<!-- tex4ht:ref: inner_product_example_figure  --></a>. <br class='newline' />
+</p> 
+<figure class='figure'> 
+
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+<p id='graph-showing-the-function-yx-along-with-the-nd-order-inner-product-approximation-shown-in-equation-ref-gsfnctionsinnerproductans'><img alt='PIC' class='graphics' src='main5x.png' /><!-- tex4ht:graphics  
+name="main5x.png" src="inner_product_figure.PNG"  
+ --> <a id='x8-67003r9'></a>
+</p> 
+<figcaption class='caption'><span class='id'>Figure 2.9:                          </span><span class='content'>Graph                          showing                          the                          function
+<!-- l. 3029 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-rel' stretchy='false'>|</mo><mi>x</mi><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>
+along with the 2nd order inner product approximation shown in equation <a href='#x8-67002r261'>2.261<!-- tex4ht:ref: gs_fnctions_inner_product_ans  --></a>                              </span></figcaption><!-- tex4ht:label?: x8-67003r9  -->
+                                                                                                
+                                                                                                
+</figure>
+                                                                                                
+                                                                                                
+<!-- l. 3033 --><div class='crosslinks'><p class='noindent'>[<a href='mainse6.html'>next</a>] [<a href='mainse4.html'>prev</a>] [<a href='mainse4.html#tailmainse4.html'>prev-tail</a>] [<a href='mainse5.html'>front</a>] [<a href='mainch2.html#mainse5.html'>up</a>] </p></div>
+<p><a id='tailmainse5.html'></a>  </p> 
+ 
+</body> 
+</html>

@@ -1,0 +1,719 @@
+:root{
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #222222;
+  --line: #111111;
+
+  /* Wider usable width */
+  --nav-width: 200px;
+  --content-max: 1200px;
+
+  /* Page padding (margins) */
+  --pad: 4vw;         /* responsive margin */
+  --pad-min: 18px;    /* don't get too small */
+  --gap: 28px;
+}
+
+*{ box-sizing: border-box; }
+
+html{
+  overflow-y: scroll;
+}
+
+
+
+.section-line{
+  height: 2px;
+  background: var(--line);
+  border: none;
+  margin: 8px 0 16px;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+
+  /* Times New Roman style */
+  font-family: "Times New Roman", Times, Georgia, serif;
+
+  line-height: 1.6;
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  gap: var(--gap);
+
+  /* use most of the page width */
+  padding: clamp(var(--pad-min), var(--pad), 48px);
+
+  /* center the whole layout but allow it to get wide */
+  max-width: 92vw;
+  margin: 0 auto;
+}
+
+
+
+
+.sidebar{
+  width: var(--nav-width);
+  min-width: var(--nav-width);
+  flex: 0 0 var(--nav-width);
+
+  position: sticky;
+  top: clamp(var(--pad-min), var(--pad), 48px);
+  align-self: flex-start;
+}
+
+.sidebar-divider{
+  width: 2px;
+  background: var(--line);
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav a{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 20px; /* slightly larger with Times */
+}
+
+.nav a:hover{ text-decoration: underline; }
+.nav a.active{ font-weight: 700; }
+
+.divider{
+  width: 2px;
+  background: var(--line);
+  flex: 0 0 2px;
+
+  position: sticky;
+  top: clamp(var(--pad-min), var(--pad), 48px);
+  height: calc(100vh - (clamp(var(--pad-min), var(--pad), 48px) * 2));
+  align-self: flex-start;
+}
+
+
+.main{
+  flex: 1;
+
+  /* allow the text to stretch more */
+  max-width: var(--content-max);
+
+  padding-left: 18px;
+}
+
+h1{
+  margin: 0 0 22px 0;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+p{
+  margin: 0 0 18px 0;
+  font-size: 20px;
+  color: var(--muted);
+}
+
+ul,
+li{
+  font-size: 20px;
+  color: inherit;
+}
+
+/* 1. Base: all links are black */
+.main a{
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* 2. Internal links stay black even after visit */
+.main a:not([href^="http"]):visited{
+  color: var(--text);
+}
+
+/* 3. External links (absolute URLs only) */
+.main a[href^="http"]{
+  color: #0645ad;
+}
+
+/* 4. External visited links */
+.main a[href^="http"]:visited{
+  color: #0645ad;
+}
+
+/* 5. Downloads (even if relative paths) */
+.main a[download]{
+  color: #0645ad;
+  font-weight: 500;
+}
+
+/* 6. Hover polish */
+.main a:hover{
+  opacity: 0.80;
+}
+
+/* internal links inside text */
+p a,
+p a:visited {
+  color: var(--text);
+}
+
+/* external links */
+p a[href^="http"],
+p a[href^="http"]:visited {
+  color: #0645ad;
+}
+
+/* downloads */
+p a[download],
+p a[download]:visited {
+  color: #0645ad;
+}
+
+
+
+/* Intro block: bigger image with caption */
+.intro{
+  display: flex;
+  gap: 34px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.figure{
+  flex: 0 0 400px;
+}
+
+.figure.center{
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption{
+  margin-top: 6px;
+  font-size: 20px;   /* ← same size as paragraphs */
+  color: var(--muted);
+}
+
+.photo-gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.photo-gallery figure {
+  margin: 0;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px; /* subtle, not cheesy */
+  display: block;
+}
+
+.photo-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 900px){
+  .page{ flex-direction: column; }
+  .sidebar{ width: auto; flex: 0 0 auto; }
+  .nav{ flex-direction: row; flex-wrap: wrap; gap: 12px 18px; }
+  .divider{ width: 100%; height: 2px; }
+  .main{ padding-left: 0; }
+  .intro{ flex-direction: column; }
+  .figure{ width: 260px; }
+}
+
+.cv-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: #111;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.cv-name {
+  font-size: 42px;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.cv-contact a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.cv-section {
+  margin-top: 22px;
+}
+
+.cv-section-title {
+  font-size: 28px;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.cv-rule {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 0 0 14px 0;
+}
+
+.cv-entry {
+  margin-bottom: 14px;
+}
+
+.cv-entry-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.cv-entry-title {
+  font-size: 20px;
+}
+
+.cv-entry-org {
+  font-size: 20px;
+}
+
+.cv-entry-right {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.cv-bullets {
+  font-size: 20px;
+  margin: 6px 0 0 22px;
+  padding: 0;
+}
+
+.cv-bullets li {
+  margin: 4px 0;
+}
+
+.cv-muted {
+  opacity: 0.75;
+}
+
+.cv-pubs p {
+  margin: 10px 0;
+}
+
+.cv-paragraph {
+  margin: 6px 0 0 0;
+}
+
+.cv-other {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.cv-other-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Page break marker (web) */
+.cv-pagebreak {
+  height: 1px;
+  margin: 26px 0;
+}
+
+/* Optional: print-friendly page break */
+@media print {
+  .cv-pagebreak {
+    break-before: page;
+    page-break-before: always;
+    height: 0;
+    margin: 0;
+  }
+}
+
+/* On book pages only */
+.page.page--book{
+  display: grid;
+  grid-template-columns: 240px 1px 360px 1fr; /* site sidebar | divider | TOC | content */
+  min-height: 100vh;
+}
+
+/* If your existing .divider already has width/appearance, keep it.
+   This just ensures it behaves in the grid. */
+.page.page--book > .divider{
+  width: 1px;
+}
+
+/* Secondary sidebar: sticky Table of Contents */
+.booktoc{
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow: auto;
+  padding: 18px 14px;
+  border-right: 1px solid rgba(0,0,0,0.10);
+  background: #fff;
+}
+
+/* Optional: a subtle “section header” look if you ever add one */
+.booktoc__list{
+  display: block;
+}
+
+/* TOC items */
+.toc-item{
+  display: block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.25;
+}
+
+.toc-item:hover{
+  background: rgba(0,0,0,0.06);
+}
+
+/* Hierarchy indentation */
+.toc-chapter{
+  font-weight: normal;
+  margin-top: 8px;
+}
+
+.toc-section{
+  padding-left: 16px;
+}
+
+.toc-subsection{
+  padding-left: 30px;
+  font-size: 0.95em;
+  opacity: 0.95;
+}
+
+/* (Optional) If later you add an "active" class manually or with JS */
+.toc-item.is-active{
+  background: rgba(0,0,0,0.10);
+  font-weight: 650;
+}
+
+/* Main content area tweaks for book pages */
+.bookmain{
+  padding: 24px 28px;
+  max-width: 980px;
+
+}
+
+/* Collapsible TOC groups */
+.toc-group{
+  margin: 0;
+  padding: 0;
+}
+
+.toc-group > summary{
+  list-style: none;
+  cursor: pointer;
+}
+
+.toc-group > summary::-webkit-details-marker{
+  display: none;
+}
+
+/* Keep your hover styling */
+.toc-group > summary.toc-item:hover{
+  background: rgba(0,0,0,0.06);
+}
+
+/* Custom arrow */
+.toc-group > summary{
+  position: relative;
+  padding-right: 22px; /* room for arrow */
+}
+
+.toc-group > summary::after{
+  content: "▸";
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.toc-group[open] > summary::after{
+  content: "▾";
+}
+
+/* Make the link in the summary row look normal */
+.toc-link{
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+
+/* ============================================================
+   BOOK / TEX4HT OVERRIDES
+   Fixes headings, equations, tables, and figures
+   ============================================================ */
+
+/* ---------- 1) SUBSUBSECTIONS TOO SMALL ---------- */
+/* TeX4ht emits <h5 class="subsubsectionHead"> */
+.bookmain h5.subsubsectionHead,
+.bookmain .subsubsectionHead {
+  font-size: 1.05rem;        /* readable, still hierarchical */
+  font-weight: 600;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  line-height: 1.35;
+}
+
+/* ---------- 2) EQUATION TEXT TOO SMALL ---------- */
+/* MathML equations (native TeX4ht output) */
+.bookmain math {
+  font-size: 1.0rem;
+}
+
+/* If MathJax is ever used, this keeps it consistent */
+.bookmain .MathJax,
+.bookmain mjx-container {
+  font-size: 100% !important;
+}
+
+/* ---------- 3) CENTER ALL DISPLAY EQUATIONS ---------- */
+/* TeX4ht often uses tables for numbered equations */
+.bookmain table.equation {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Center MathML alignment tables */
+.bookmain mtable.align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure equation numbers don’t squash content */
+.bookmain td.eq-no {
+  padding-left: 1em;
+  white-space: nowrap;
+}
+
+/* ---------- 4) TABLES: SPACING + CENTERING ---------- */
+.bookmain table.tabular {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  border-collapse: separate;
+  border-spacing: 0.75em 0.45em;  /* airy, readable tables */
+}
+
+/* Cell spacing */
+.bookmain table.tabular th,
+.bookmain table.tabular td {
+  padding: 0.45em 0.75em;
+  vertical-align: middle;
+}
+
+/* Prevent ultra-wide tables from crushing columns */
+.bookmain div.tabular {
+  overflow-x: auto;
+}
+
+/* ---------- 5) FIGURES NOT SCRUNCHED ---------- */
+.bookmain figure {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.bookmain figure img {
+  max-width: 100%;
+  height: auto !important;   /* override HTML attributes */
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bookmain figcaption {
+  margin-top: 0.6em;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* ---------- BONUS: GLOBAL READABILITY TWEAK ---------- */
+/* Slightly improve paragraph spacing in math-heavy text */
+.bookmain p {
+  line-height: 1.55;
+}
+
+/* =========================
+   FIGURE CAPTIONS (TeX4ht)
+   ========================= */
+
+figure.figure figcaption.caption,
+figure.figure figcaption.caption span {
+  font-size: 1.1em !important; /* adjust */
+  line-height: 1.4 !important;
+  text-align: center !important;
+}
+
+figure.figure figcaption.caption .id {
+  font-weight: 600 !important;
+}
+
+figure.figure figcaption.caption .content {
+  font-weight: 400 !important;
+}
+
+/* =========================
+   TeX4ht tabular — header rule only
+   ========================= */
+
+div.tabular > table.tabular {
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  margin: 1em auto !important;
+}
+
+/* Vertical lines only (no horizontal by default) */
+div.tabular > table.tabular td,
+div.tabular > table.tabular th {
+  border-left: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+
+  padding: 0.35em 0.7em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Top outer border */
+div.tabular > table.tabular tr:first-child td,
+div.tabular > table.tabular tr:first-child th {
+  border-top: 1px solid #000 !important;
+}
+
+/* Use TeX4ht's hline row as the SINGLE horizontal rule */
+div.tabular > table.tabular tr.hline {
+  display: table-row !important;
+}
+
+div.tabular > table.tabular tr.hline td,
+div.tabular > table.tabular tr.hline th {
+  padding: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+
+  border-top: 1px solid #000 !important;   /* <-- the one horizontal line */
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Keep equation tables untouched */
+table.equation,
+table.equation td,
+table.equation th {
+  border: none !important;
+}
+
+
+/* =========================
+   TABLE CAPTIONS (TeX4ht)
+   ========================= */
+
+figure.float figcaption.caption {
+  font-size: 1.2em;   /* ← adjust this */
+  line-height: 1.4;
+  margin-bottom: 0.6em;
+}
+
+/* Keep label slightly emphasized */
+figure.float figcaption.caption span.id {
+  font-weight: 600;
+}
+
+/* Caption text normal weight */
+figure.float figcaption.caption span.content {
+  font-weight: 400;
+}
+
+/* =========================
+   TABLE CONTENT FONT SIZE
+   ========================= */
+
+div.tabular > table.tabular {
+  font-size: 1.2em;   /* ← adjust this */
+}
+
+
+
+
+
+
+
+/* =========================
+   MOBILE / NARROW SCREENS
+   ========================= */
+@media (max-width: 980px){
+  /* Drop the TOC column: keep site sidebar + divider + content */
+  .page.page--book{
+    grid-template-columns: 240px 1px 1fr;
+  }
+
+  /* Put the TOC above the main content in the content column */
+  .booktoc{
+    position: relative;    /* not sticky on mobile */
+    height: auto;
+    overflow: visible;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+    grid-column: 3 / -1;   /* content column */
+  }
+
+  .bookmain{
+    padding: 18px 16px;
+  }
+
+
+
+
+
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jakub (Kuba) Preis — Research and Projects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a class="active" href="research.html">Research and Projects</a>
+          <a href="cv.html">CV</a>
+          <a href="book.html">Book</a>
+          <a href="manou.html">Manou Fan Page</a>
+        </nav>
+      </aside>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <main class="main">
+        <h1>Research and Projects</h1>
+
+        <h2>Physical Twin</h2>
+        <p>
+          A fundamental question within manufacturing is how material properties such as strength can be predicted given a
+          process. Ideally, every manufactured part would carry with it an array outlining relevant properties (corrosion,
+          strength, thermal, etc.) as a function of location. Within other engineering disciplines such as fluid system design,
+          mechanical design, or electrical system design, modeling can be used to predict how a given configuration will behave.
+          However, predicting properties based on a given manufacturing process is currently computationally prohibitive due to
+          the necessity to simulate complex thermal dynamics combined with solidification to predict the location of moles of atoms.
+          For this reason, qualification of an alloy for a given manufacturing process is predominantly test-based and can last
+          from years to decades.
+        </p>
+
+        <p>
+          Current advances in machine learning (ML) have enabled the ability to correlate inputs and outputs from existing data
+          resulting in the prediction of new information based on past knowledge (i.e. reasoning), and could be used to correlate
+          processing conditions to properties. However, such ML approaches are only applicable if large, reliable datasets are
+          available. Fabricating such datasets requires extensive effort due to the difficulty of both fabrication and testing.
+          For example, researchers at Oak Ridge National Laboratory tested 6,299 stainless steel coupons fabricated via laser powder
+          bed fusion to understand the impact of print orientation and parameters on mechanical properties; creating this dataset
+          required a multi-month effort with multiple full-time engineers [1]. Thus, constructing a system optimized for mimicking
+          a given additive manufacturing process to quickly fabricate test coupons and automate testing has the potential to rapidly
+          generate a database of relevant material properties for downstream ML analysis. Such a system is dubbed as a “physical twin”
+          (in contrast to a “digital twin” which is a simplified digital model).
+        </p>
+
+        <p> [1] S. Luke, J. Chase, C. David, H. William, D. Ryan, P. Vincent, A Co-Registered In-Situ and Ex-Situ Tensile Properties Dataset from a Laser Powder Bed Fusion Additive Manufacturing Process, OLCF database (2023)</p>
+
+        <figure class="figure center">
+        <img src="images/physical_twin.png" alt="Description of the figure" class="photo" />
+        <figcaption class="caption">
+        Figure 1. Components of automated material fabrication and testing system.
+        </figcaption>
+        </figure>
+
+
+        <hr class="section-line" />
+
+        <h2>A New Format for Academic Journals</h2>
+        <p>
+          Academic publishing has not fundamentally changed in the past century despite changes in technology and the culture of academia.
+          Specifically, when publishing in academic journals review times are known to take months, and reviews can be low quality.
+          In addition, research output is measured by amount of publications and citation count, which does not necessarily correlate with
+          high quality research. The goal of this project is to build a new framework for academic publishing which eliminates the
+          inefficiencies of publishing (i.e. long review time) and promotes scientific discussion. Some features of the proposed platform include:
+        </p>
+
+        <ul>
+          <li>Platform can take a manuscript in any file type (.docx, LaTex, .pdf) and subjects it to automatic formatting.</li>
+          <li>Since most researchers read papers online, native support for interactive figures / animations are encouraged.</li>
+          <li>Reviews are made public.</li>
+          <li>Published papers have a comment section, where academic discussions can continue.</li>
+        </ul>
+
+
+        <hr class="section-line" />
+
+        <h2>PhD Research: Joining Inconel and GRCop42</h2>
+        <p>
+          My PhD research focused on developing method a to join Inconel alloys (Ni-based alloy with high strength at high temperatures)
+          to GRCop42 (Cu-based alloy with high thermal conductivity). One application which requires such joints is rocket exhaust chambers.
+          My PhD research indicated these joints are prone to cracking when joining using liquid state processes due to a liquid miscibility gap
+          (lack of liquid state mixing) which arises when the GRCop42 and Inconel mix within a melt pool. I subsequently developed two
+          “transition compositions” which can be deposited in between GRCop42 and Inconel and allow for cracking to be avoided. The slides from my dissertation 
+          can be downloaded <a href="files/phd_slides.pdf" download>here</a>.
+        </p>
+
+      </main>
+    </div>
+  </body>
+</html>
+

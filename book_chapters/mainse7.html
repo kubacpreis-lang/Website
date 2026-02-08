@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+<head><title>Other coordinate systems</title>
+<meta charset="utf-8"/>
+<meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
+<link href="main.css" rel="stylesheet" type="text/css"/>
+<!--  for beautifying  --><link href="site.css" rel="stylesheet" type="text/css"/><link href="../style.css" rel="stylesheet"/>
+
+<!--
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ], processEscapes: true }, "HTML-CSS": { availableFonts: ["TeX"] } }); </script> <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+-->
+
+<style>
+  /* Prevent “blink”: hide native MathML until MathJax finishes typesetting */
+  html:not(.mjx-loaded) math { visibility: hidden; }
+</style>
+
+<script>
+  window.MathJax = {
+    chtml: {
+      /* make it bigger; tweak 1.1–1.5 to taste */
+      scale: 2.0
+    },
+    startup: {
+      pageReady: () => MathJax.startup.defaultPageReady().then(() => {
+        document.documentElement.classList.add('mjx-loaded');
+      })
+    }
+  };
+</script>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js">
+</script>
+
+</head><body><div class="page page--book"><!-- PRIMARY SITE SIDEBAR --><aside class="sidebar">
+<nav class="nav">
+<a href="../index.html">Home</a>
+<a href="../research.html">Research and Projects</a>
+<a href="../cv.html">CV</a>
+<a class="active" href="../book.html">Book</a>
+<a href="../manou.html">Manou Fan Page</a>
+</nav>
+</aside><!-- DIVIDER --><div aria-hidden="true" class="divider"></div><!-- SECONDARY BOOK TOC SIDEBAR --><aside aria-label="Book table of contents" class="booktoc">
+<nav class="booktoc__list">
+<a class="toc-item toc-chapter" href="mainch1.html#introduction">
+      1 Introduction
+    </a>
+<a class="toc-item toc-chapter" href="mainch2.html#mathematics-fundamentals">
+      2 Mathematics Fundamentals
+    </a>
+<!-- 2.1 -->
+<details class="toc-group" open="">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse1.html#calculus-fundamentals">
+          2.1 Calculus Fundamentals
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse1.html#the-derivative" id="QQ2-4-4">
+        2.1.1 The Derivative
+      </a>
+<a class="toc-item toc-subsection" href="mainse1.html#the-partial-derivative" id="QQ2-4-9">
+        2.1.2 The Partial Derivative
+      </a>
+<a class="toc-item toc-subsection" href="mainse1.html#the-integral" id="QQ2-4-12">
+        2.1.3 The Integral
+      </a>
+<a class="toc-item toc-subsection" href="mainse1.html#double-and-beyond-integrals" id="QQ2-4-15">
+        2.1.4 Double (and beyond) Integrals
+      </a>
+<a class="toc-item toc-subsection" href="mainse1.html#methods-of-integration" id="QQ2-4-18">
+        2.1.5 Methods of Integration
+      </a>
+</details>
+<!-- 2.2 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse2.html#differential-equations">
+          2.2 Differential Equations
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse2.html#direct-integration" id="QQ2-5-31">
+        2.2.1 Direct Integration
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#substitution" id="QQ2-5-33">
+        2.2.2 Substitution
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#the-method-of-undetermined-coefficients" id="QQ2-5-35">
+        2.2.3 The Method of Undetermined Coefficients
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#the-laplace-transform" id="QQ2-5-38">
+        2.2.4 The Laplace Transform
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#series-solutions-to-differential-equations" id="QQ2-5-41">
+        2.2.5 Series Solutions to Differential Equations
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#series-solutions-to-cauchy-euler-differential-equations" id="QQ2-5-43">
+        2.2.6 Series Solutions to Cauchy Euler Differential Equations
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#short-example10" id="QQ2-5-44">
+        2.2.7 Short Example
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#separation-of-variables" id="QQ2-5-45">
+        2.2.8 Separation of Variables
+      </a>
+<a class="toc-item toc-subsection" href="mainse2.html#numerical-methods-finite-difference" id="QQ2-5-47">
+        2.2.9 Numerical Methods: Finite Difference
+      </a>
+</details>
+<!-- 2.3 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse3.html#vectors">
+          2.3 Vectors
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse3.html#vector-addition-and-subtraction" id="QQ2-6-59">
+        2.3.1 Vector addition and subtraction
+      </a>
+<a class="toc-item toc-subsection" href="mainse3.html#the-dot-product" id="QQ2-6-60">
+        2.3.2 The Dot Product
+      </a>
+<a class="toc-item toc-subsection" href="mainse3.html#the-cross-product" id="QQ2-6-61">
+        2.3.3 The Cross Product
+      </a>
+</details>
+<!-- 2.4 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse4.html#curve-fitting">
+          2.4 Curve Fitting
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse4.html#r-squared" id="QQ2-7-69">
+        2.4.1 R Squared
+      </a>
+</details>
+<!-- 2.5 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse5.html#approximating-functions">
+          2.5 Approximating Functions
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse5.html#taylor-series-expansion" id="QQ2-8-73">
+        2.5.1 Taylor Series Expansion
+      </a>
+<a class="toc-item toc-subsection" href="mainse5.html#inner-product-approximation" id="QQ2-8-78">
+        2.5.2 Inner Product Approximation
+      </a>
+</details>
+<!-- 2.6 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse6.html#matrices">
+          2.6 Matrices
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse6.html#eigenvalues-and-eigenvectors" id="QQ2-9-89">
+        2.6.1 Eigenvalues and Eigenvectors
+      </a>
+</details>
+<!-- 2.7 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse7.html#other-coordinate-systems">
+          2.7 Other coordinate systems
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse7.html#cylindrical-coordinate-system" id="QQ2-10-93">
+        2.7.1 Cylindrical Coordinate System
+      </a>
+<a class="toc-item toc-subsection" href="mainse7.html#spherical-coordinate-system" id="QQ2-10-95">
+        2.7.2 Spherical Coordinate System
+      </a>
+</details>
+<!-- 2.8 -->
+<details class="toc-group">
+<summary class="toc-item toc-section">
+<a class="toc-link" href="mainse8.html#other-topics">
+          2.8 Other Topics
+        </a>
+</summary>
+<a class="toc-item toc-subsection" href="mainse8.html#trigonometric-approximations" id="QQ2-11-98">
+        2.8.1 Trigonometric Approximations
+      </a>
+<a class="toc-item toc-subsection" href="mainse8.html#coordinate-axis-rotation" id="QQ2-11-100">
+        2.8.2 Coordinate axis rotation
+      </a>
+<a class="toc-item toc-subsection" href="mainse8.html#imaginary-numbers" id="QQ2-11-102">
+        2.8.3 Imaginary Numbers
+      </a>
+</details>
+</nav>
+</aside><main class="main bookmain"><nav aria-label="Page navigation" class="bookpager">
+<a class="pager-btn pager-prev" href="mainse6.html">← Previous</a>
+<a class="pager-btn pager-next" href="mainse8.html">Next →</a>
+</nav><!-- l. 3615 --><h3 class="sectionHead" id="other-coordinate-systems"><span class="titlemark">2.7   </span> <a id="x10-770002.7"></a>Other coordinate systems</h3><p>Within this book, we have operated and will continue to operate mostly within the <em><span class="cmti-10">Cartesian
+coordinate system</span></em>. This coordinate system uses the distance from the origin along the
+<!-- l. 3617 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>,
+<!-- l. 3617 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>, and
+<!-- l. 3617 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> (in 3D)
+axes to specify the location of a point in space. This is shown in Figure <a href="#graph-showing-the-locating-of-a-part-in-space-by-use-of-the-cartesian-coordinate-system">2.11<!-- tex4ht:ref: cartesian_figure  --></a>. <br class="newline"/>
+</p><figure class="figure">
+<p id="graph-showing-the-locating-of-a-part-in-space-by-use-of-the-cartesian-coordinate-system"><img alt="PIC" class="graphics" src="book_images/cartesian_figure.PNG"/><!-- tex4ht:graphics  
+name="main6x.png" src="cartesian_figure.PNG"  
+ --> <a id="x10-77001r11"></a>
+</p>
+<figcaption class="caption"><span class="id">Figure 2.11: </span><span class="content">Graph showing the locating of a part in space by use of the Cartesian coordinate system           </span></figcaption><!-- tex4ht:label?: x10-77001r11  -->
+</figure><p>In this section, we will go over two other commonly used coordinate systems; cylindrical and spherical. <br class="newline"/>
+</p><h4 class="subsectionHead" id="cylindrical-coordinate-system"><span class="titlemark">2.7.1   </span> <a id="x10-780002.7.1"></a>Cylindrical Coordinate System</h4><p>The cylindrical coordinate system is also sometimes referred to as the polar coordinate system. This coordinate system keeps the
+<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> coordinate from the Cartesian
+coordinate system. However, the <!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math>
+and <!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math>
+coordinates from the Cartesian coordinate system are replaced with the <em><span class="cmti-10">axial distance</span></em>
+(<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>ρ</mi></math>) and <em><span class="cmti-10">azimuth</span></em>
+(<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>φ</mi></math>) coordinates. The
+<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>ρ</mi></math> coordinate is the normal
+distance from the <!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> axis to
+the point of interest. The <!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>φ</mi></math>
+coordinate is the angle between a axis extending from the origin and normal to the
+<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math>
+axis (called an <em><span class="cmti-10">azimuth reference</span></em>, symbolized by A) and a line extending from the origin onto a
+projection of the point of interest on the plane which includes the origin and is normal to the
+<!-- l. 3632 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math> axis. A
+visualization of the polar coordinate system is provided in Figure <a href="#graph-showing-the-locating-of-a-part-in-space-by-use-of-the-cylindricalpolar-coordinate-system">2.12<!-- tex4ht:ref: cylindrical_figure  --></a>. <br class="newline"/>
+</p><figure class="figure">
+<p id="graph-showing-the-locating-of-a-part-in-space-by-use-of-the-cylindricalpolar-coordinate-system"><img alt="PIC" class="graphics" src="book_images/cylindrical_figure.PNG"/><!-- tex4ht:graphics  
+name="main7x.png" src="cylindrical_figure.PNG"  
+ --> <a id="x10-78001r12"></a>
+</p>
+<figcaption class="caption"><span class="id">Figure 2.12: </span><span class="content">Graph showing the locating of a part in space by use of the Cylindrical/Polar coordinate system     </span></figcaption><!-- tex4ht:label?: x10-78001r12  -->
+</figure><p>Using geometry, we can derive the following equations to transform any polar coordinate to Cartesian. <br class="newline"/>
+</p><div class="center">
+<p>
+</p>
+<p>
+</p>
+<!-- tex4ht:inline --><!-- l. 3648 --><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mtable class="align-star" columnalign="left" displaystyle="true" rowlines="none" style="">
+<mtr><mtd class="align-odd" columnalign="right"><mi>x</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>ρ</mi><mi class="loglike">cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>φ</mi><mo class="MathClass-close" stretchy="false">)</mo><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr><mtr><mtd class="align-odd" columnalign="right"><mi>y</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>ρ</mi><mi class="loglike">sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>φ</mi><mo class="MathClass-close" stretchy="false">)</mo><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr><mtr><mtd class="align-odd" columnalign="right"><mi>z</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>z</mi><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr></mtable></math>
+</div><h4 class="subsectionHead" id="spherical-coordinate-system"><span class="titlemark">2.7.2   </span> <a id="x10-790002.7.2"></a>Spherical Coordinate System</h4><p>The spherical coordinate system defines a point in space based on the radius
+(<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math>), the inclination
+(<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝜃</mi></math>), and the
+azimuth (<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>φ</mi></math>). The
+<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> coordinate is the distance from the
+origin to the point of interest. The (<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>𝜃</mi></math>)
+coordinate is the angle between a axis extending from the origin (called an <em><span class="cmti-10">zenith reference</span></em>,
+symbolized by Z) and the line connecting the origin and the point of interest. The
+<!-- l. 3655 --><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>φ</mi></math>
+coordinate is the angle between a axis extending from the origin and normal to the Z axis (called an <em><span class="cmti-10">azimuth reference</span></em>,
+symbolized by A) and a line extending from the origin onto a projection of the point of interest on the plane which includes
+the origin and is normal to the Z axis. A visualization of the spherical coordinate system is provided in Figure
+<a href="#graph-showing-the-locating-of-a-part-in-space-by-use-of-the-spherical-coordinate-system-the-z-represents-the-zenith-reference-axis">2.13<!-- tex4ht:ref: spherical_figure  --></a>.<br class="newline"/>
+</p><figure class="figure">
+<p id="graph-showing-the-locating-of-a-part-in-space-by-use-of-the-spherical-coordinate-system-the-z-represents-the-zenith-reference-axis"><img alt="PIC" class="graphics" src="book_images/spherical_figure.PNG"/><!-- tex4ht:graphics  
+name="main8x.png" src="spherical_figure.PNG"  
+ --> <a id="x10-79001r13"></a>
+</p>
+<figcaption class="caption"><span class="id">Figure 2.13: </span><span class="content">Graph showing the locating of a part in space by use of the Spherical coordinate system. The Z represents
+the zenith reference axis                                                                            </span></figcaption><!-- tex4ht:label?: x10-79001r13  -->
+</figure><p>Using geometry, we can derive the following equations to transform any spherical coordinate to Cartesian.
+<br class="newline"/>
+</p><div class="center">
+<p>
+</p>
+<p>
+</p>
+<!-- tex4ht:inline --><!-- l. 3672 --><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mtable class="align-star" columnalign="left" displaystyle="true" rowlines="none" style="">
+<mtr><mtd class="align-odd" columnalign="right"><mi>x</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>r</mi><mi class="loglike">sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>𝜃</mi><mo class="MathClass-close" stretchy="false">)</mo><mstyle><mi class="loglike">cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>φ</mi><mo class="MathClass-close" stretchy="false">)</mo><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr><mtr><mtd class="align-odd" columnalign="right"><mi>y</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>r</mi><mi class="loglike">sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>𝜃</mi><mo class="MathClass-close" stretchy="false">)</mo><mstyle><mi class="loglike">sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>φ</mi><mo class="MathClass-close" stretchy="false">)</mo><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr><mtr><mtd class="align-odd" columnalign="right"><mi>z</mi></mtd> <mtd class="align-even"> <mo class="MathClass-rel" stretchy="false">=</mo> <mi>r</mi><mi class="loglike">cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class="MathClass-open" stretchy="false">(</mo><mi>𝜃</mi><mo class="MathClass-close" stretchy="false">)</mo><mspace width="2em"></mspace></mtd> <mtd class="align-label" columnalign="right"></mtd> <mtd class="align-label">
+<mspace width="2em"></mspace></mtd></mtr></mtable></math>
+</div><!-- l. 3675 --><p><a id="tailmainse7.html"></a> </p><nav aria-label="Page navigation" class="bookpager">
+<a class="pager-btn pager-prev" href="mainse6.html">← Previous</a>
+<a class="pager-btn pager-next" href="mainse8.html">Next →</a>
+</nav></main></div></body>
+</html>
