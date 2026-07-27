@@ -92,6 +92,13 @@ body{
 .nav a:hover{ text-decoration: underline; }
 .nav a.active{ font-weight: 700; }
 
+.nav a:focus-visible,
+.main a:focus-visible,
+summary:focus-visible{
+  outline: 3px solid #1a73e8;
+  outline-offset: 3px;
+}
+
 .divider{
   display: none;
 }
@@ -100,6 +107,11 @@ body{
 .main{
   /* allow the text to stretch more */
   max-width: var(--content-max);
+  min-width: 0;
+}
+
+.intro-text{
+  width: 100%;
   min-width: 0;
 }
 
@@ -231,10 +243,79 @@ p a[download]:visited {
   text-align: center;
 }
 
+.blog-list{
+  border-top: 1px solid rgba(0,0,0,0.18);
+}
+
+.page.page--blog{
+  align-content: start;
+}
+
+.blog-list__item{
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.18);
+}
+
+.blog-list__heading{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px 28px;
+  align-items: baseline;
+}
+
+.blog-list__title{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.blog-list__date,
+.post-meta{
+  color: #555;
+  font-size: 16px;
+}
+
+.blog-list__date{
+  flex: 0 0 auto;
+}
+
+.blog-list__excerpt{
+  margin: 10px 0 0;
+}
+
+.post-header{
+  margin-bottom: 28px;
+}
+
+.post-header h1{
+  margin-bottom: 8px;
+}
+
+.post-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+}
+
+.blog-post h2{
+  margin: 32px 0 12px;
+  font-size: 28px;
+  line-height: 1.25;
+}
+
 
 /* Responsive */
 @media (max-width: 900px){
-  .intro{ flex-direction: column; }
+  .intro{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  .intro-text{
+    max-width: 100%;
+  }
   .figure{
     width: min(100%, 360px);
     flex-basis: auto;
@@ -259,7 +340,7 @@ p a[download]:visited {
   .nav a{
     display: inline-flex;
     align-items: center;
-    min-height: 38px;
+    min-height: 44px;
     padding: 6px 9px;
     border: 1px solid rgba(0,0,0,0.18);
     border-radius: 8px;
@@ -276,6 +357,19 @@ p a[download]:visited {
   li,
   .caption{
     font-size: 17px;
+  }
+
+  .blog-list__heading{
+    display: block;
+  }
+
+  .blog-list__date{
+    display: block;
+    margin-top: 6px;
+  }
+
+  .blog-post h2{
+    font-size: 24px;
   }
 }
 
@@ -429,7 +523,14 @@ p a[download]:visited {
   background: #fff;
 }
 
-/* Optional: a subtle “section header” look if you ever add one */
+.booktoc__toggle{
+  display: none;
+  min-height: 44px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .booktoc__list{
   display: block;
 }
@@ -563,7 +664,6 @@ p a[download]:visited {
   margin-top: 1em;
   margin-bottom: 1em;
   max-width: 100%;
-  overflow-x: auto;
 }
 
 /* Center MathML alignment tables */
@@ -597,7 +697,9 @@ p a[download]:visited {
 
 /* Prevent ultra-wide tables from crushing columns */
 .bookmain div.tabular {
+  max-width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* ---------- 5) FIGURES NOT SCRUNCHED ---------- */
@@ -760,6 +862,21 @@ div.tabular > table.tabular {
     border-bottom: 1px solid rgba(0,0,0,0.10);
   }
 
+  .booktoc__toggle{
+    display: flex;
+    padding: 8px;
+  }
+
+  .booktoc__list{
+    padding-top: 4px;
+  }
+
+  .booktoc:not([open]){
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
   .bookmain{
     padding: 0;
   }
@@ -791,11 +908,14 @@ div.tabular > table.tabular {
     padding-left: 18px;
   }
 
-  .bookmain table,
-  .bookmain math,
-  .bookmain mjx-container{
+  .bookmain table.equation,
+  .bookmain math[display="block"],
+  .bookmain mjx-container[display="true"]{
+    display: block;
+    width: 100%;
     max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }

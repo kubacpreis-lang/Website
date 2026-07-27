@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +15,8 @@
           <a href="research.html">Research and Projects</a>
           <a href="cv.html">CV</a>
           <a href="book.html">Book</a>
-          <a class="active" href="manou.html">Manou Fan Page</a>
+          <a href="blog/">Blog</a>
+          <a class="active" aria-current="page" href="manou.html">Manou Fan Page</a>
         </nav>
       </aside>
 
@@ -24,27 +25,54 @@
       <main class="main">
         <h1>Manou Pagina</h1>
         <p>
-            Manou is een paard dat in Laarne, België woont.
-            Ze houdt van haar eigenaar en van eten.
-            Op deze pagina vind je enkele foto’s van Manou in haar dagelijkse leven.
-            <section class="photo-gallery">
-            <figure>
-            <img src="images/manou-1.png" alt="Manou op haar verjaarsdag" />
-            <figcaption>Manou op haar verjaarsdag.</figcaption>
-            </figure>
-
-            <figure>
-            <img src="images/manou-2.jpg" alt="Manou met een hoed" />
-            <figcaption>Manou met een hoed.</figcaption>
-            </figure>
-
-            <figure>
-            <img src="images/manou-3.jpg" alt="Manou met haar moeder" />
-            <figcaption>Manou met haar moeder.</figcaption>
-            </figure>
-            </section>
-          
+          Manou is een paard dat in Laarne, België woont.
+          Ze houdt van haar eigenaar en van eten.
+          Op deze pagina vind je enkele foto’s van Manou in haar dagelijkse leven.
         </p>
+
+        <section class="photo-gallery">
+          <figure>
+            <img
+              src="images/manou-1-960.jpg"
+              srcset="images/manou-1-480.jpg 480w, images/manou-1-960.jpg 960w, images/manou-1-1440.jpg 1440w"
+              sizes="(max-width: 520px) calc(100vw - 28px), (max-width: 1000px) calc(50vw - 32px), 384px"
+              width="960"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+              alt="Manou op haar verjaarsdag"
+            />
+            <figcaption>Manou op haar verjaarsdag.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/manou-2-960.jpg"
+              srcset="images/manou-2-480.jpg 480w, images/manou-2-960.jpg 960w, images/manou-2.jpg 1200w"
+              sizes="(max-width: 520px) calc(100vw - 28px), (max-width: 1000px) calc(50vw - 32px), 384px"
+              width="960"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+              alt="Manou met een hoed"
+            />
+            <figcaption>Manou met een hoed.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/manou-3-960.jpg"
+              srcset="images/manou-3-480.jpg 480w, images/manou-3-960.jpg 960w, images/manou-3-1440.jpg 1440w"
+              sizes="(max-width: 520px) calc(100vw - 28px), (max-width: 1000px) calc(50vw - 32px), 384px"
+              width="960"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+              alt="Manou met haar moeder"
+            />
+            <figcaption>Manou met haar moeder.</figcaption>
+          </figure>
+        </section>
       </main>
     </div>
   </body>
