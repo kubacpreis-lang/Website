@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="It has now been approximately one month since I left my last job at ValCUN. Since then, I went wandering in the Alps and in the Polish mountains."
+    />
+    <title>Lessons from a Few Years at Additive Manufacturing Startups — Jakub Preis</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+
+  <body>
+    <div class="page page--blog">
+      <aside class="sidebar">
+        <nav class="nav">
+          <a href="../../index.html">Home</a>
+          <a href="../../research.html">Research and Projects</a>
+          <a href="../../cv.html">CV</a>
+          <a href="../../book.html">Book</a>
+          <a class="active" aria-current="page" href="../">Blog</a>
+          <a href="../../manou.html">Manou Fan Page</a>
+        </nav>
+      </aside>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <main class="main">
+        <article class="blog-post">
+          <header class="post-header">
+            <h1>Lessons from a Few Years at Additive Manufacturing Startups</h1>
+            <p class="post-meta">
+              <span>Kuba Preis</span>
+              <span aria-hidden="true">·</span>
+              <time datetime="2026-07">July 2026</time>
+            </p>
+          </header>
+
+          <p>
+            It has now been approximately one month since I left my last job at ValCUN. Since then, I went wandering in the Alps and in the Polish mountains. So needless to say, I have had time to reflect on my time working at startups, and I thought it would be a good idea to write down some of the lessons I learned. Quite frankly, I wish I had done this after finishing my PhD and after leaving Divergent, but better to start late than never.
+          </p>
+
+          <p>
+            For those who do not know, my most recent employer ValCUN is a Belgian startup developing a metal additive manufacturing technology called molten metal deposition. The idea is: aluminum is extruded in a controlled fashion from a nozzle and deposited at a specified location (basically fused deposition modeling for aluminum). While the idea sounds simple, implementing it is extremely difficult. ValCUN is the first company to successfully develop direct aluminum printing using aluminum wire feedstock. I had the opportunity to work with an all-star team of very smart people, and I learned a lot! Before that, I worked at Divergent, which is developing a full end digital manufacturing process. I will split my reflection into three sections; these are Product Development, Management Techniques, and Data Collection and Analysis.
+          </p>
+
+          <h2>Product Development</h2>
+
+          <p>
+            I spent a lot of time at ValCUN trying to solve problems which required redesigns. This is where I ran into the common problem engineers experience: it is so much easier/faster to conceptualize an idea and develop the corresponding design than to make the physical prototype. In many projects, physical implementation consumed far more time than initial concept development. Procurement, fabrication, assembly, debugging, and iteration repeatedly dominated the schedule. Having a lot of stock and spare materials at the company was key to moving quicker.
+          </p>
+
+          <p>
+            I also spent some time developing products from the ground up; this was specifically for the student thesis projects I supervised. For these projects, I found the fastest way to get to a working solution was to try to find the closest physical existing product that performs a similar function and modify it.
+          </p>
+
+          <p>
+            One other thing I learned is the importance of requirements. For example, one student project I supervised involved the automation of a manual cleaning operation. We were able to build a system which functioned in most cases. The remaining cases could be reworked manually if necessary. While this is not ideal, developing a system which works 100% of the time would have been far more expensive and beyond the scope and timeline of a student thesis project. A mostly effective system still saved us a ton of effort and time. So, the conclusion is; make sure you set requirements so that you balance system effectiveness with timeline and budget. Oftentimes a “pretty good” solution is good enough rather than “perfect”. Going from mostly effective to perfect is very difficult.
+          </p>
+
+          <h2>Management Techniques</h2>
+
+          <p>
+            One recurring challenge in technology companies is deciding which markets, applications, and development opportunities deserve limited resources. This decision should be made by balancing the potential gains of pursuing a given case vs. the challenge of getting there. Deciding which direction to go based on this balancing act is an extremely difficult thing to do, because so much is unknown. You do not truly know how large a market is, and you also do not truly know how difficult a given development is. The best you can do is make an educated decision based on what you know now.
+            As I mentioned previously, I spent some time mentoring students during my time in industry and at Oregon State University. I found that short, structured progress reviews worked particularly well when supervising student engineering projects. I asked students to briefly summarize what they had completed, what they had learned, where they were blocked, and what they planned to do next. We would then agree on priorities, responsibilities, and deadlines. The appropriate meeting frequency depends on the person’s experience, the ambiguity of the project, and the amount of structure they currently need. Some projects benefit from brief daily check-ins, while others require only a weekly review.
+          </p>
+
+          <h2>Data collection and analysis</h2>
+
+          <p>
+            I worked a lot with data collection and analysis during my time at Divergent, and I applied many of those lessons while contributing to data-collection and analysis infrastructure at ValCUN. While there is so much hype right now about machine learning and artificial intelligence, none of these fancy machine learning techniques matter if you don’t collect the data in the first place. Collecting data is no easy task; I once spent hours trying to connect a simple humidity sensor to a database. Thus, the challenge of integrating different data sources into a coherent framework should not be underestimated.
+            After you collect data, you may very well learn that the data you collect is not relevant to the output you are trying to monitor. For example, if you want to predict rain in the Netherlands it does not help much if all you collect is the temperature and pressure in France. No artificial intelligence model will help you. Thus intelligently positioning appropriate sensors in informative locations is paramount and should be emphasized.
+            Once you have collected the relevant data, correlating to an output of interest is comparatively straightforward. I found such data driven correlations can be used for three things: (1) understanding the root cause of a phenomenon in a process, (2) qualification, and (3) closed loop control.
+          </p>
+
+          <h2>Final note</h2>
+
+          <p>
+            These reflections represent my personal perspective and focus on general lessons that apply across engineering organizations. They do not disclose confidential technology, commercial strategy, or internal decision-making.
+          </p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
