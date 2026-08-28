@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A qualitative snapshot of manufacturing challenges drawn from eight interviews across advanced manufacturing sectors."
+    />
+    <title>Industry Perspectives on Manufacturing Pain Points — Jakub Preis</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+
+  <body>
+    <div class="page page--blog">
+      <aside class="sidebar">
+        <nav class="nav">
+          <a href="../../index.html">Home</a>
+          <a href="../../research.html">Research and Projects</a>
+          <a href="../../cv.html">CV</a>
+          <a href="../../book.html">Book</a>
+          <a class="active" aria-current="page" href="../">Blog</a>
+          <a href="../../manou.html">Manou Fan Page</a>
+        </nav>
+      </aside>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <main class="main">
+        <article class="blog-post">
+          <header class="post-header">
+            <h1>Industry Perspectives on Manufacturing Pain Points</h1>
+            <p class="post-meta">
+              <span>Kuba Preis</span>
+              <span aria-hidden="true">·</span>
+              <time datetime="2026-08">August 2026</time>
+            </p>
+          </header>
+
+          <p>
+            I recently began a new position as an assistant professor in the Mechanical Engineering department at California Polytechnic State University, San Luis Obispo. While my duties are mostly related to teaching, I am also expected to establish a research direction. Toward this end, I thought it would be nice to take a step back and get a viewpoint on the current state of the advanced manufacturing industry. I realize my perspective is limited; I have mostly worked on producing parts or making machines that produce parts. Thus, I reached out to several ex-colleagues and friends across an array of industries to get their perspectives. I ended up conducting eight in-depth interviews. The industries covered are provided below:
+          </p>
+
+          <ul>
+            <li>Nuclear</li>
+            <li>Advanced energy</li>
+            <li>Aerospace</li>
+            <li>Robotics</li>
+            <li>Additive manufacturing</li>
+          </ul>
+
+          <p>
+            While the conversations were mostly open-ended, I did have a rough structure. Each person was asked about:
+          </p>
+
+          <ul>
+            <li>The manufacturing processes they utilized</li>
+            <li>Qualification strategies for parts</li>
+            <li>Materials and properties of interest</li>
+            <li>If additive is used, and if not, why not</li>
+            <li>Biggest pain points</li>
+          </ul>
+
+          <p>
+            These semi-structured interviews are not intended to constitute a representative survey of the manufacturing industry. Rather, they provide a qualitative snapshot of the challenges encountered by engineers working across several advanced manufacturing sectors. In this blog post, I will provide a summary and discussion of the responses for each topic discussed.
+          </p>
+
+          <h2>Utilized Manufacturing Processes</h2>
+
+          <p>
+            The most commonly used manufacturing processes across the interviews were traditional processes such as extrusion, casting, machining, and waterjet cutting. Several interviews specifically highlighted that many structures are built by welding together traditionally manufactured components such as formed plates. This observation is consistent with a recent <a href="https://nvlpubs.nist.gov/nistpubs/ams/NIST.AMS.600-16.pdf">NIST estimate</a> suggesting that goods produced using additive manufacturing accounted for roughly 0.14% of shipments across the manufacturing sectors considered in its analysis, highlighting how dominant traditional manufacturing remains. This creates an interesting disconnect: <strong>additive manufacturing occupies a disproportionately large share of academic manufacturing research relative to its current share of industrial production.</strong>
+          </p>
+
+          <h2>Qualification Strategies for Parts</h2>
+
+          <p>
+            As can be assumed, confidence that a part is going to perform as expected is paramount for the nuclear industry. Thus, qualification is a major part of development. From the interviews, it was clear that an established procedure exists for the qualification of parts. When raw material is produced by a metal mill, some of the produced material is sent to a testing lab. There, the chemistry, strength, and grain size, among other properties, are measured. For each alloy, specific limits and procedures have been set and are extensively detailed in ASME manuals. Thus, if a sample from a given mill production line passes the ASME guidelines, it is considered qualified.
+          </p>
+
+          <p>
+            Additive manufacturing, unfortunately, does not have an established qualification pipeline. Witness tensile specimens printed concurrently with a given part were described as an important part of additive manufacturing qualification. This matches my experience working in the additive industry. <strong>The problem is that just because you get a given yield strength on a tensile bar from a print, that does not mean the yield strength on the part concurrently printed will be equivalent to that of the tensile bar.</strong> This can occur for many reasons. For example, you could have a thin wall in your part that cools faster than a tensile bar and thus will have different properties. Thus, qualification is still a huge problem in additive manufacturing.
+          </p>
+
+          <p>
+            It was noted that for Laser Powder Bed Fusion (LPBF), imaging systems exist that monitor the melt pool and could be used for qualification; however, this is not yet widespread. In addition, while LPBF parameter sets can be developed to print a wide variety of parts, the parameters used to print using the Wire Arc Additive Manufacturing (WAAM) process must be adjusted depending on part geometry. For example, a thin wall will require completely different parameters than a thick block. This means each parameter-geometry combination must be independently qualified, leading to high costs.
+          </p>
+
+          <h2>Material Properties of Interest</h2>
+
+          <p>
+            Stainless steel was mentioned as being a major material of interest throughout the nuclear and aerospace industries, especially for large aerospace structures. This is likely due to a combination of cost, ease of qualification, and material properties. Within the aerospace industry, it was noted that Ni-alloys are extensively used within engines, likely due to the better high-temperature strength Ni-alloys can provide compared with steel.
+          </p>
+
+          <p>
+            High-temperature properties such as creep and fatigue were discussed extensively as being very important. In addition, corrosion resistance was noted as an important property for nuclear applications.
+          </p>
+
+          <p>
+            One interviewee mentioned utilizing Al and Mg alloys extensively in addition to polymers due to their low density.
+          </p>
+
+          <h2>If Additive Is Used, and If Not, Why Not?</h2>
+
+          <p>
+            In nuclear applications, additive manufacturing was described as difficult or impractical to deploy for many components because an accepted qualification pathway was lacking. In fact, there are some components produced via additive manufacturing that have been <a href="https://info.westinghousenuclear.com/news/westinghouses-additive-manufacturing-innovation-improves-safety-and-efficiency-in-operating-nuclear-reactors">deployed in commercial reactors</a>. However, this practice is not yet widespread.
+          </p>
+
+          <p>
+            One interviewee mentioned that Stereolithography is used for production components, while Fused Deposition Modeling (FDM) is used for prototyping. This matches my experience in industry, where a cheap FDM printer from <a href="https://www.prusa3d.com/">Prusa</a>, for example, can be used to quickly make any shape. The issue is that FDM parts are not typically used for structural applications due to low strength.
+          </p>
+
+          <h2>Pain Points</h2>
+
+          <p>
+            Some interviews discussed difficulty in getting material-property data, specifically for irradiated components, and difficulty sourcing complex geometries. Ideally, complex geometries would be 3D printed; however, lack of qualification prevents this from happening. Determining weld parameters to join metal components was also identified as an expensive and time-consuming activity.
+          </p>
+
+          <p>
+            Similar concerns were raised regarding additive manufacturing, in the sense that the lack of an established qualification pipeline is significantly hampering additive manufacturing adoption. If a part could be “naturally qualified,” meaning it comes out of the printer with confidence in its properties, that would allow for widespread additive adoption. In addition, multiple interviewees mentioned that despite process control, many additive manufacturing processes for both polymers and metals are not 100% successful at printing parts. There is always some percentage of builds that fail. One specific complaint regarding polymer additive manufacturing was that dimensional accuracy can be inconsistent. In addition, polymer parts typically need metal inserts for bearings or threads, which is a manual and difficult task. Support removal and powder removal were discussed as additional pain points for Laser Powder Bed Fusion (LPBF).
+          </p>
+
+          <p>
+            For traditional manufacturing processes such as machining, long lead times were mentioned.
+          </p>
+
+          <h2>Summary</h2>
+
+          <p>
+            What stands out to me from these interviews is how difficult qualification is for additive manufacturing. This is something that I would like to address with the Physical Twin concept discussed in the <a href="../../research.html">research section</a> of this website. In addition, I think it is important to note that most manufacturing output in the U.S. is traditional. Thus, interfacing with industry should address issues in traditional manufacturing.
+          </p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
